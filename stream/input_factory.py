@@ -12,20 +12,20 @@ class InputFactory:
         """
         Decision maker for creating the appropriate Producer.
         """
-        if mode == 'rtsp':
+        if mode == 'video':
             # Get RTSP URL from config
             url = config['receive_img']['rtsp_url']
             # Return the video receiver object (already implemented)
             return RTSPRECEIVEProducer(rtsp_url=url, frame_queue=frame_queue)
             
-        elif mode == 'http':
+        elif mode == 'image':
             # Get HTTP URL from config (to be added in config.yaml later)
             url = config['receive_img'].get('http_url', 'http://localhost/image.jpg')
             # Return the image receiver object (to be implemented)
             # return HTTPReceiveProducer(http_url=url, frame_queue=frame_queue)
             
             # Temporary until http_input.py is implemented
-            raise NotImplementedError("HTTP mode is not yet implemented.")
+            raise NotImplementedError("image mode is not yet implemented.")
             
         else:
             raise ValueError(f"Unknown input mode: {mode}")

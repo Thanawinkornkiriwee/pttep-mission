@@ -1,6 +1,5 @@
-2026-02-21 19:53:02 | INFO     | AIPipeline | main.py:20 | === Starting AI Pipeline in [VIDEO] mode ===
-2026-02-21 19:53:02 | DEBUG    | AIPipeline | main.py:30 | Frame queue initialized with maxsize=1
-2026-02-21 19:53:02 | ERROR    | AIPipeline | main.py:38 | Failed to create Input Producer: Unknown input mode: video
-2026-02-21 19:53:17 | INFO     | AIPipeline | main.py:20 | === Starting AI Pipeline in [VIDEO] mode ===
-2026-02-21 19:53:17 | DEBUG    | AIPipeline | main.py:30 | Frame queue initialized with maxsize=1
-2026-02-21 19:53:17 | ERROR    | AIPipeline | main.py:38 | Failed to create Input Producer: Unknown input mode: video
+2026-02-21 19:57:56 | INFO     | AIPipeline | main.py:20 | === Starting AI Pipeline in [VIDEO] mode ===
+2026-02-21 19:57:56 | DEBUG    | AIPipeline | main.py:30 | Frame queue initialized with maxsize=1
+2026-02-21 19:57:56 | INFO     | AIPipeline | rtsp_rev.py:21 | [RTSPProducer] Attempting to connect to: rtsp://admin:pass@192.168.1.100:554/stream
+2026-02-21 19:57:56 | INFO     | AIPipeline | main.py:50 | Pipeline is running. Press Ctrl+C to stop.
+2026-02-21 19:57:56 | WARNING  | AIPipeline | rtsp_rev.py:33 | [RTSPProducer] GStreamer backend failed. Falling back to default backend.
