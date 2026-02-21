@@ -1,0 +1,2 @@
+2026-02-21 19:53:02 | ERROR    | AIPipeline | main.py:38 | Failed to create Input Producer: Unknown input mode: video
+2026-02-21 19:53:17 | ERROR    | AIPipeline | main.py:38 | Failed to create Input Producer: Unknown input mode: video

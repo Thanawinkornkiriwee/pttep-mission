@@ -1,28 +1,27 @@
 import cv2
-import threading
 import queue
 import time
-import logging
+
+from stream.base_input import BaseInputProducer
 
 
-class RTSPRECEIVEProducer(threading.Thread):
-    def __init__(self,rtsp_url:str,frame_queue:queue.Queue):
-        super().__init__()
-        self.rtsp_url=rtsp_url
-        self.frame_queue = frame_queue
-        self.running = True
-        self.cap =None
-        self.logger = logging.getLogger("AIPipeline")
-        self.daemon =True
+class RTSPRECEIVEProducer(BaseInputProducer):
+    def __init__(self, rtsp_url: str, frame_queue: queue.Queue):
+        
+        super().__init__(source_url=rtsp_url, frame_queue=frame_queue)
+        
+        self.cap = None
 
     def _connect(self):
+        """Internal method to initialize the RTSP connection."""
         if self.cap is not None:
             self.cap.release()
 
-        self.logger.info(f"[rtsp_rev.py] Attempting to connect to: {self.rtsp_url}")
+        # self.source_url (parent class uses)
+        self.logger.info(f"[RTSPProducer] Attempting to connect to: {self.source_url}")
 
         gst_pipeline = (
-            f'rtspsrc location={self.rtsp_url} latency=0 ! '
+            f'rtspsrc location={self.source_url} latency=0 ! '
             'rtph264depay ! h264parse ! avdec_h264 ! '
             'videoconvert ! appsink drop=true max-buffers=1'
         )
@@ -31,47 +30,42 @@ class RTSPRECEIVEProducer(threading.Thread):
 
         # Fallback to standard backend if GStreamer fails or is not available
         if not self.cap.isOpened():
-            self.logger.warning("[rtsp_rev.py] GStreamer backend failed. Falling back to default backend.")
-            self.cap = cv2.VideoCapture(self.rtsp_url)
+            self.logger.warning("[RTSPProducer] GStreamer backend failed. Falling back to default backend.")
+            self.cap = cv2.VideoCapture(self.source_url)
 
-        if  self.cap.isOpened():
-            self.logger.info("[rtsp_rev.py] Connect established sucessfully.")
+        if self.cap.isOpened():
+            self.logger.info("[RTSPProducer] Connect established successfully.")
         else:
-            self.logger.error("[rtsp_rev.py] Connection failed. Please check the RTSP URL or Network.")
-
+            self.logger.error("[RTSPProducer] Connection failed. Please check the RTSP URL or Network.")
 
     def run(self):
         """Continuously read frames. Automatically reconnects and logs events."""
         self._connect()
 
-        while self.running:
+        while self.running:  # self.running is defined in the parent class
             if not self.cap or not self.cap.isOpened():
-                self.logger.warning("[rtsp_rev.py] Receive stream lost. Reconnecting in 3 seconds...")
+                self.logger.warning("[RTSPProducer] Receive stream lost. Reconnecting in 3 seconds...")
                 time.sleep(3)
                 self._connect()
                 continue
         
             ret, frame = self.cap.read()
             if not ret:
-                    self.logger.error("[rtsp_rev.py] Empty frame received. Triggering reconnection...")
-                    self.cap.release()
-                    continue
+                self.logger.error("[RTSPProducer] Empty frame received. Triggering reconnection...")
+                self.cap.release()
+                continue
             
             if self.frame_queue.full():
-                    try:
-                        # Drop the oldest frame to maintain real-time processing
-                        self.frame_queue.get_nowait() 
-                    except queue.Empty:
-                        pass
+                try:
+                    # Drop the oldest frame to maintain real-time processing
+                    self.frame_queue.get_nowait() 
+                except queue.Empty:
+                    pass
 
             self.frame_queue.put(frame)
         
         if self.cap:
             self.cap.release()
-        self.logger.info("[rtsp_rev.py] Thread stopped cleanly.")
-
-    def stop(self):
-        """Stop the producer thread."""
-        self.running = False
-        self.logger.debug("[rtsp_rev.py] Stop signal received.")
-
+        self.logger.info("[RTSPProducer] Thread stopped cleanly.")
+        
+    

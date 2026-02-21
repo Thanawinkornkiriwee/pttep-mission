@@ -1,0 +1,6 @@
+2026-02-21 19:53:02 | INFO     | AIPipeline | main.py:20 | === Starting AI Pipeline in [VIDEO] mode ===
+2026-02-21 19:53:02 | DEBUG    | AIPipeline | main.py:30 | Frame queue initialized with maxsize=1
+2026-02-21 19:53:02 | ERROR    | AIPipeline | main.py:38 | Failed to create Input Producer: Unknown input mode: video
+2026-02-21 19:53:17 | INFO     | AIPipeline | main.py:20 | === Starting AI Pipeline in [VIDEO] mode ===
+2026-02-21 19:53:17 | DEBUG    | AIPipeline | main.py:30 | Frame queue initialized with maxsize=1
+2026-02-21 19:53:17 | ERROR    | AIPipeline | main.py:38 | Failed to create Input Producer: Unknown input mode: video
