@@ -13,6 +13,7 @@ class RTSPRECEIVEProducer(threading.Thread):
         self.running = True
         self.cap =None
         self.logger = logging.getLogger("AIPipeline")
+        self.daemon =True
 
     def _connect(self):
         if self.cap is not None:
@@ -41,7 +42,7 @@ class RTSPRECEIVEProducer(threading.Thread):
 
     def run(self):
         """Continuously read frames. Automatically reconnects and logs events."""
-        self.connect()
+        self._connect()
 
         while self.running:
             if not self.cap or not self.cap.isOpened():
