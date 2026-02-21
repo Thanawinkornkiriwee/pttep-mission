@@ -1,2 +1,17 @@
 2026-02-21 19:53:02 | ERROR    | AIPipeline | main.py:38 | Failed to create Input Producer: Unknown input mode: video
 2026-02-21 19:53:17 | ERROR    | AIPipeline | main.py:38 | Failed to create Input Producer: Unknown input mode: video
+2026-02-21 19:58:26 | ERROR    | AIPipeline | rtsp_rev.py:39 | [RTSPProducer] Connection failed. Please check the RTSP URL or Network.
+2026-02-21 19:58:59 | ERROR    | AIPipeline | rtsp_rev.py:39 | [RTSPProducer] Connection failed. Please check the RTSP URL or Network.
+2026-02-21 19:59:32 | ERROR    | AIPipeline | rtsp_rev.py:39 | [RTSPProducer] Connection failed. Please check the RTSP URL or Network.
+2026-02-21 20:00:05 | ERROR    | AIPipeline | rtsp_rev.py:39 | [RTSPProducer] Connection failed. Please check the RTSP URL or Network.
+2026-02-21 20:00:38 | ERROR    | AIPipeline | rtsp_rev.py:39 | [RTSPProducer] Connection failed. Please check the RTSP URL or Network.
+2026-02-21 20:01:11 | ERROR    | AIPipeline | rtsp_rev.py:39 | [RTSPProducer] Connection failed. Please check the RTSP URL or Network.
+2026-02-21 20:01:44 | ERROR    | AIPipeline | rtsp_rev.py:39 | [RTSPProducer] Connection failed. Please check the RTSP URL or Network.
+2026-02-21 20:02:17 | ERROR    | AIPipeline | rtsp_rev.py:39 | [RTSPProducer] Connection failed. Please check the RTSP URL or Network.
+2026-02-21 20:03:15 | ERROR    | AIPipeline | rtsp_rev.py:39 | [RTSPProducer] Connection failed. Please check the RTSP URL or Network.
+2026-02-21 20:03:18 | ERROR    | AIPipeline | rtsp_rev.py:39 | [RTSPProducer] Connection failed. Please check the RTSP URL or Network.
+2026-02-21 20:03:21 | ERROR    | AIPipeline | rtsp_rev.py:39 | [RTSPProducer] Connection failed. Please check the RTSP URL or Network.
+2026-02-21 20:03:24 | ERROR    | AIPipeline | rtsp_rev.py:39 | [RTSPProducer] Connection failed. Please check the RTSP URL or Network.
+2026-02-21 20:03:27 | ERROR    | AIPipeline | rtsp_rev.py:39 | [RTSPProducer] Connection failed. Please check the RTSP URL or Network.
+2026-02-21 20:03:30 | ERROR    | AIPipeline | rtsp_rev.py:39 | [RTSPProducer] Connection failed. Please check the RTSP URL or Network.
+2026-02-21 20:10:20 | ERROR    | AIPipeline | rtsp_rev.py:39 | [RTSPProducer] Connection failed. Please check the RTSP URL or Network.

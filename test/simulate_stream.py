@@ -15,7 +15,7 @@ class CustomRtspServer:
         self.server.set_service(port)       
         
         # 1. ดึงรายชื่อไฟล์ภาพทั้งหมด
-        files = [f for f in os.listdir(folder_path) if f.lower().endswith(('.jpg', '.jpeg', '.png'))]
+        files = [f for f in os.listdir(folder_path) if f.lower().endswith(('.jpg', '.jpeg', '.png','.mp4'))]
         files.sort()
         
         if not files:
@@ -61,7 +61,7 @@ class CustomRtspServer:
         print(f"Server is live at rtsp://10.61.35.243:{port}/stream")
 
 if __name__ == "__main__":
-    folder = os.path.abspath("./media_folder") 
+    folder = os.path.abspath("./video_folder") 
     server = CustomRtspServer(folder, "0.0.0.0", "8554")
     loop = GLib.MainLoop()
     try:

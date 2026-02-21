@@ -1,10 +1,10 @@
 system:
-  log_level: "DEBUG"         # ระดับการเก็บ Log: DEBUG, INFO, WARNING, ERROR
+  log_level: "DEBUG"         
   log_file: "logs/system.log"
 
 receive_img:
-  rtsp_url: "rtsp://admin:pass@192.168.1.100:554/stream"
-  buffer_size: 1             # ขนาด Latest Frame Buffer
+  rtsp_url: "rtsp://10.61.35.243:8554/stream"
+  buffer_size: 1             
 
 object_detection:
   yolo_model: "yolo11n.pt"
