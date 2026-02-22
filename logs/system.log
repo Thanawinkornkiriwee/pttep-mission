@@ -72,3 +72,38 @@
 2026-02-21 20:48:23 | INFO     | AIPipeline | rtsp_rev.py:21 | [RTSPProducer] Attempting to connect to: rtsp://10.61.35.243:8554/stream
 2026-02-21 20:48:23 | WARNING  | AIPipeline | rtsp_rev.py:33 | [RTSPProducer] GStreamer backend failed. Falling back to default backend.
 2026-02-21 20:48:24 | INFO     | AIPipeline | rtsp_rev.py:37 | [RTSPProducer] Connect established successfully.
+2026-02-22 11:14:37 | INFO     | AIPipeline | main.py:20 | === Starting AI Pipeline in [VIDEO] mode ===
+2026-02-22 11:14:37 | DEBUG    | AIPipeline | main.py:30 | Frame queue initialized with maxsize=1
+2026-02-22 11:14:37 | INFO     | AIPipeline | rtsp_rev.py:21 | [RTSPProducer] Attempting to connect to: rtsp://10.61.35.243:8554/stream
+2026-02-22 11:14:37 | INFO     | AIPipeline | main.py:50 | Pipeline is running. Press Ctrl+C to stop.
+2026-02-22 11:14:37 | WARNING  | AIPipeline | rtsp_rev.py:33 | [RTSPProducer] GStreamer backend failed. Falling back to default backend.
+2026-02-22 11:14:37 | ERROR    | AIPipeline | rtsp_rev.py:39 | [RTSPProducer] Connection failed. Please check the RTSP URL or Network.
+2026-02-22 11:14:37 | WARNING  | AIPipeline | rtsp_rev.py:47 | [RTSPProducer] Receive stream lost. Reconnecting in 3 seconds...
+2026-02-22 11:14:40 | INFO     | AIPipeline | rtsp_rev.py:21 | [RTSPProducer] Attempting to connect to: rtsp://10.61.35.243:8554/stream
+2026-02-22 11:14:40 | WARNING  | AIPipeline | rtsp_rev.py:33 | [RTSPProducer] GStreamer backend failed. Falling back to default backend.
+2026-02-22 11:14:40 | ERROR    | AIPipeline | rtsp_rev.py:39 | [RTSPProducer] Connection failed. Please check the RTSP URL or Network.
+2026-02-22 11:14:40 | WARNING  | AIPipeline | rtsp_rev.py:47 | [RTSPProducer] Receive stream lost. Reconnecting in 3 seconds...
+2026-02-22 11:14:43 | INFO     | AIPipeline | rtsp_rev.py:21 | [RTSPProducer] Attempting to connect to: rtsp://10.61.35.243:8554/stream
+2026-02-22 11:14:43 | WARNING  | AIPipeline | rtsp_rev.py:33 | [RTSPProducer] GStreamer backend failed. Falling back to default backend.
+2026-02-22 11:14:43 | ERROR    | AIPipeline | rtsp_rev.py:39 | [RTSPProducer] Connection failed. Please check the RTSP URL or Network.
+2026-02-22 11:14:43 | WARNING  | AIPipeline | rtsp_rev.py:47 | [RTSPProducer] Receive stream lost. Reconnecting in 3 seconds...
+2026-02-22 11:14:44 | INFO     | AIPipeline | main.py:59 | KeyboardInterrupt detected. Shutting down pipeline gracefully...
+2026-02-22 11:14:44 | DEBUG    | AIPipeline | base_input.py:32 | [RTSPRECEIVEProducer] Stop signal received.
+2026-02-22 11:14:52 | INFO     | AIPipeline | main.py:20 | === Starting AI Pipeline in [IMAGE] mode ===
+2026-02-22 11:14:52 | DEBUG    | AIPipeline | main.py:30 | Frame queue initialized with maxsize=1
+2026-02-22 11:14:52 | INFO     | AIPipeline | http_rev.py:18 | [HTTPProducer] Starting to poll images from: http://10.61.35.243:1984/image
+2026-02-22 11:14:52 | INFO     | AIPipeline | main.py:50 | Pipeline is running. Press Ctrl+C to stop.
+2026-02-22 11:14:52 | WARNING  | AIPipeline | http_rev.py:47 | [HTTPProducer] No image tag found in HTML. Make sure the media folder has images.
+2026-02-22 11:14:53 | WARNING  | AIPipeline | http_rev.py:47 | [HTTPProducer] No image tag found in HTML. Make sure the media folder has images.
+2026-02-22 11:14:54 | WARNING  | AIPipeline | http_rev.py:47 | [HTTPProducer] No image tag found in HTML. Make sure the media folder has images.
+2026-02-22 11:14:55 | WARNING  | AIPipeline | http_rev.py:47 | [HTTPProducer] No image tag found in HTML. Make sure the media folder has images.
+2026-02-22 11:14:56 | WARNING  | AIPipeline | http_rev.py:47 | [HTTPProducer] No image tag found in HTML. Make sure the media folder has images.
+2026-02-22 11:14:57 | WARNING  | AIPipeline | http_rev.py:47 | [HTTPProducer] No image tag found in HTML. Make sure the media folder has images.
+2026-02-22 11:14:58 | WARNING  | AIPipeline | http_rev.py:47 | [HTTPProducer] No image tag found in HTML. Make sure the media folder has images.
+2026-02-22 11:14:59 | WARNING  | AIPipeline | http_rev.py:47 | [HTTPProducer] No image tag found in HTML. Make sure the media folder has images.
+2026-02-22 11:15:00 | WARNING  | AIPipeline | http_rev.py:47 | [HTTPProducer] No image tag found in HTML. Make sure the media folder has images.
+2026-02-22 11:15:01 | WARNING  | AIPipeline | http_rev.py:47 | [HTTPProducer] No image tag found in HTML. Make sure the media folder has images.
+2026-02-22 11:15:02 | WARNING  | AIPipeline | http_rev.py:47 | [HTTPProducer] No image tag found in HTML. Make sure the media folder has images.
+2026-02-22 11:15:03 | WARNING  | AIPipeline | http_rev.py:47 | [HTTPProducer] No image tag found in HTML. Make sure the media folder has images.
+2026-02-22 11:15:04 | INFO     | AIPipeline | main.py:59 | KeyboardInterrupt detected. Shutting down pipeline gracefully...
+2026-02-22 11:15:04 | DEBUG    | AIPipeline | base_input.py:32 | [HTTPRECEIVEProducer] Stop signal received.

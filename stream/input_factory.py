@@ -1,6 +1,6 @@
 import queue
 from stream.rtsp_rev import RTSPRECEIVEProducer
-# from stream.http_input import HTTPReceiveProducer # (to be written in the future)
+from stream.http_rev import HTTPRECEIVEProducer
 
 class InputFactory:
     """
@@ -13,19 +13,17 @@ class InputFactory:
         Decision maker for creating the appropriate Producer.
         """
         if mode == 'video':
-            # Get RTSP URL from config
+           
             url = config['receive_img']['rtsp_url']
-            # Return the video receiver object (already implemented)
+            
             return RTSPRECEIVEProducer(rtsp_url=url, frame_queue=frame_queue)
             
         elif mode == 'image':
-            # Get HTTP URL from config (to be added in config.yaml later)
-            url = config['receive_img'].get('http_url', 'http://localhost/image.jpg')
-            # Return the image receiver object (to be implemented)
-            # return HTTPReceiveProducer(http_url=url, frame_queue=frame_queue)
+         
+            url = config['receive_img']['http_url']
             
-            # Temporary until http_input.py is implemented
-            raise NotImplementedError("image mode is not yet implemented.")
             
+            
+            return HTTPRECEIVEProducer(http_url=url, frame_queue=frame_queue)
         else:
             raise ValueError(f"Unknown input mode: {mode}")
