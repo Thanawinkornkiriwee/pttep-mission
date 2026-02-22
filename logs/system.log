@@ -126,3 +126,308 @@
 2026-02-22 11:26:20 | INFO     | AIPipeline | main.py:50 | Pipeline is running. Press Ctrl+C to stop.
 2026-02-22 11:26:33 | WARNING  | AIPipeline | http_rev.py:74 | [HTTPProducer] Connection lost. Server might be down. Retrying in background...
 2026-02-22 11:26:42 | INFO     | AIPipeline | http_rev.py:35 | [HTTPProducer] Connection re-established successfully.
+2026-02-22 11:29:07 | INFO     | AIPipeline | main.py:59 | KeyboardInterrupt detected. Shutting down pipeline gracefully...
+2026-02-22 11:29:07 | DEBUG    | AIPipeline | base_input.py:32 | [HTTPRECEIVEProducer] Stop signal received.
+2026-02-22 11:29:08 | INFO     | AIPipeline | http_rev.py:106 | [HTTPProducer] Thread stopped cleanly.
+2026-02-22 11:29:08 | INFO     | AIPipeline | main.py:69 | === Pipeline shutdown complete. ===
+2026-02-22 11:29:11 | INFO     | AIPipeline | main.py:20 | === Starting AI Pipeline in [VIDEO] mode ===
+2026-02-22 11:29:11 | DEBUG    | AIPipeline | main.py:30 | Frame queue initialized with maxsize=1
+2026-02-22 11:29:11 | INFO     | AIPipeline | rtsp_rev.py:21 | [RTSPProducer] Attempting to connect to: rtsp://10.61.35.243:8554/stream
+2026-02-22 11:29:11 | INFO     | AIPipeline | main.py:50 | Pipeline is running. Press Ctrl+C to stop.
+2026-02-22 11:29:11 | WARNING  | AIPipeline | rtsp_rev.py:33 | [RTSPProducer] GStreamer backend failed. Falling back to default backend.
+2026-02-22 11:29:11 | ERROR    | AIPipeline | rtsp_rev.py:39 | [RTSPProducer] Connection failed. Please check the RTSP URL or Network.
+2026-02-22 11:29:11 | WARNING  | AIPipeline | rtsp_rev.py:47 | [RTSPProducer] Receive stream lost. Reconnecting in 3 seconds...
+2026-02-22 11:29:14 | INFO     | AIPipeline | rtsp_rev.py:21 | [RTSPProducer] Attempting to connect to: rtsp://10.61.35.243:8554/stream
+2026-02-22 11:29:14 | WARNING  | AIPipeline | rtsp_rev.py:33 | [RTSPProducer] GStreamer backend failed. Falling back to default backend.
+2026-02-22 11:29:14 | ERROR    | AIPipeline | rtsp_rev.py:39 | [RTSPProducer] Connection failed. Please check the RTSP URL or Network.
+2026-02-22 11:29:14 | WARNING  | AIPipeline | rtsp_rev.py:47 | [RTSPProducer] Receive stream lost. Reconnecting in 3 seconds...
+2026-02-22 11:29:17 | INFO     | AIPipeline | rtsp_rev.py:21 | [RTSPProducer] Attempting to connect to: rtsp://10.61.35.243:8554/stream
+2026-02-22 11:29:17 | WARNING  | AIPipeline | rtsp_rev.py:33 | [RTSPProducer] GStreamer backend failed. Falling back to default backend.
+2026-02-22 11:29:17 | ERROR    | AIPipeline | rtsp_rev.py:39 | [RTSPProducer] Connection failed. Please check the RTSP URL or Network.
+2026-02-22 11:29:17 | WARNING  | AIPipeline | rtsp_rev.py:47 | [RTSPProducer] Receive stream lost. Reconnecting in 3 seconds...
+2026-02-22 11:29:20 | INFO     | AIPipeline | rtsp_rev.py:21 | [RTSPProducer] Attempting to connect to: rtsp://10.61.35.243:8554/stream
+2026-02-22 11:29:20 | WARNING  | AIPipeline | rtsp_rev.py:33 | [RTSPProducer] GStreamer backend failed. Falling back to default backend.
+2026-02-22 11:29:20 | ERROR    | AIPipeline | rtsp_rev.py:39 | [RTSPProducer] Connection failed. Please check the RTSP URL or Network.
+2026-02-22 11:29:20 | WARNING  | AIPipeline | rtsp_rev.py:47 | [RTSPProducer] Receive stream lost. Reconnecting in 3 seconds...
+2026-02-22 11:29:23 | INFO     | AIPipeline | rtsp_rev.py:21 | [RTSPProducer] Attempting to connect to: rtsp://10.61.35.243:8554/stream
+2026-02-22 11:29:23 | WARNING  | AIPipeline | rtsp_rev.py:33 | [RTSPProducer] GStreamer backend failed. Falling back to default backend.
+2026-02-22 11:29:23 | ERROR    | AIPipeline | rtsp_rev.py:39 | [RTSPProducer] Connection failed. Please check the RTSP URL or Network.
+2026-02-22 11:29:23 | WARNING  | AIPipeline | rtsp_rev.py:47 | [RTSPProducer] Receive stream lost. Reconnecting in 3 seconds...
+2026-02-22 11:29:26 | INFO     | AIPipeline | rtsp_rev.py:21 | [RTSPProducer] Attempting to connect to: rtsp://10.61.35.243:8554/stream
+2026-02-22 11:29:26 | WARNING  | AIPipeline | rtsp_rev.py:33 | [RTSPProducer] GStreamer backend failed. Falling back to default backend.
+2026-02-22 11:29:26 | ERROR    | AIPipeline | rtsp_rev.py:39 | [RTSPProducer] Connection failed. Please check the RTSP URL or Network.
+2026-02-22 11:29:26 | WARNING  | AIPipeline | rtsp_rev.py:47 | [RTSPProducer] Receive stream lost. Reconnecting in 3 seconds...
+2026-02-22 11:29:29 | INFO     | AIPipeline | rtsp_rev.py:21 | [RTSPProducer] Attempting to connect to: rtsp://10.61.35.243:8554/stream
+2026-02-22 11:29:29 | WARNING  | AIPipeline | rtsp_rev.py:33 | [RTSPProducer] GStreamer backend failed. Falling back to default backend.
+2026-02-22 11:29:33 | INFO     | AIPipeline | rtsp_rev.py:37 | [RTSPProducer] Connect established successfully.
+2026-02-22 11:29:57 | INFO     | AIPipeline | main.py:59 | KeyboardInterrupt detected. Shutting down pipeline gracefully...
+2026-02-22 11:29:57 | DEBUG    | AIPipeline | base_input.py:32 | [RTSPRECEIVEProducer] Stop signal received.
+2026-02-22 11:29:57 | INFO     | AIPipeline | rtsp_rev.py:69 | [RTSPProducer] Thread stopped cleanly.
+2026-02-22 11:29:57 | INFO     | AIPipeline | main.py:69 | === Pipeline shutdown complete. ===
+2026-02-22 11:32:14 | INFO     | AIPipeline | main.py:20 | === Starting AI Pipeline in [VIDEO] mode ===
+2026-02-22 11:32:14 | DEBUG    | AIPipeline | main.py:30 | Frame queue initialized with maxsize=1
+2026-02-22 11:32:14 | INFO     | AIPipeline | rtsp_rev.py:21 | [RTSPProducer] Attempting to connect to: rtsp://10.61.35.243:8554/stream
+2026-02-22 11:32:14 | INFO     | AIPipeline | main.py:50 | Pipeline is running. Press Ctrl+C to stop.
+2026-02-22 11:32:14 | WARNING  | AIPipeline | rtsp_rev.py:33 | [RTSPProducer] GStreamer backend failed. Falling back to default backend.
+2026-02-22 11:32:15 | INFO     | AIPipeline | rtsp_rev.py:37 | [RTSPProducer] Connect established successfully.
+2026-02-22 11:32:15 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:15 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:15 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:15 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:15 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:15 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:15 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:15 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:15 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:15 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:15 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:15 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:15 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:15 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:15 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:15 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:15 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:15 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:15 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:15 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:15 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:15 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:15 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:15 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:15 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:15 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:15 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:16 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:16 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:16 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:16 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:16 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:16 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:16 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:16 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:16 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:16 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:16 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:16 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:16 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:16 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:16 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:16 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:16 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:16 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:16 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:16 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:16 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:16 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:16 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:16 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:16 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:17 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:17 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:17 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:17 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:17 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:17 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:17 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:17 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:17 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:17 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:17 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:17 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:17 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:17 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:17 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:17 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:17 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:17 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:17 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:17 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:17 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:17 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:17 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:17 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:17 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:18 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:18 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:18 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:18 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:18 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:18 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:18 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:18 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:18 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:18 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:18 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:18 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:18 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:18 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:18 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:18 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:18 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:18 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:18 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:18 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:18 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:18 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:18 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:18 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:18 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:19 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:19 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:19 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:19 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:19 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:19 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:19 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:19 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:19 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:19 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:19 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:19 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:19 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:19 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:19 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:19 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:19 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:19 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:19 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:19 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:19 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:19 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:19 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:19 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:19 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:20 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:20 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:20 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:20 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:20 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:20 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:20 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:20 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:20 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:20 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:20 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:20 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:20 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:20 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:20 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:20 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:20 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:20 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:20 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:20 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:20 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:20 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:20 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:20 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:20 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:21 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:21 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:21 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:21 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:21 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:21 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:21 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:21 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:21 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:21 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:21 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:21 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:21 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:21 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:21 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:21 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:21 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:21 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:21 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:21 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:21 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:21 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:21 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:21 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:21 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:22 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:22 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:22 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:22 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:22 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:22 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:22 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:22 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:22 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:22 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:22 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:22 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:22 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:22 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:22 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:22 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:22 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:22 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:22 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:22 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:22 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:22 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:22 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:22 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:22 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:23 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:23 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:23 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:23 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:23 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:23 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:23 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:23 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:23 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:23 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:23 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:23 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:23 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:23 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:23 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:23 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:23 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:23 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:23 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:23 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:23 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:23 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:23 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:23 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:23 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:24 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:24 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:24 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:24 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:24 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:24 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:24 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:24 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:24 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:24 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:24 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:24 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:24 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:24 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:24 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:24 | INFO     | AIPipeline | main.py:59 | KeyboardInterrupt detected. Shutting down pipeline gracefully...
+2026-02-22 11:32:24 | DEBUG    | AIPipeline | base_input.py:32 | [RTSPRECEIVEProducer] Stop signal received.
+2026-02-22 11:32:24 | DEBUG    | AIPipeline | rtsp_rev.py:66 | [RTSPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:24 | INFO     | AIPipeline | rtsp_rev.py:70 | [RTSPProducer] Thread stopped cleanly.
+2026-02-22 11:32:24 | INFO     | AIPipeline | main.py:69 | === Pipeline shutdown complete. ===
+2026-02-22 11:32:36 | INFO     | AIPipeline | main.py:20 | === Starting AI Pipeline in [IMAGE] mode ===
+2026-02-22 11:32:36 | DEBUG    | AIPipeline | main.py:30 | Frame queue initialized with maxsize=1
+2026-02-22 11:32:36 | INFO     | AIPipeline | http_rev.py:24 | [HTTPProducer] Starting to poll images from: http://10.61.35.243:1984/image
+2026-02-22 11:32:36 | INFO     | AIPipeline | main.py:50 | Pipeline is running. Press Ctrl+C to stop.
+2026-02-22 11:32:36 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:37 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:38 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:39 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:40 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:41 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:42 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:43 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 11:32:44 | INFO     | AIPipeline | main.py:59 | KeyboardInterrupt detected. Shutting down pipeline gracefully...
+2026-02-22 11:32:44 | DEBUG    | AIPipeline | base_input.py:32 | [HTTPRECEIVEProducer] Stop signal received.

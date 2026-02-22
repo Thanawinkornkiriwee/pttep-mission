@@ -22,3 +22,9 @@
 2026-02-22 11:24:11 | ERROR    | AIPipeline | http_rev.py:57 | [HTTPProducer] Network error trying to reach server: HTTPConnectionPool(host='10.61.35.243', port=1984): Max retries exceeded with url: /image (Caused by NewConnectionError("HTTPConnection(host='10.61.35.243', port=1984): Failed to establish a new connection: [Errno 111] Connection refused"))
 2026-02-22 11:24:12 | ERROR    | AIPipeline | http_rev.py:57 | [HTTPProducer] Network error trying to reach server: HTTPConnectionPool(host='10.61.35.243', port=1984): Max retries exceeded with url: /image (Caused by NewConnectionError("HTTPConnection(host='10.61.35.243', port=1984): Failed to establish a new connection: [Errno 111] Connection refused"))
 2026-02-22 11:24:13 | ERROR    | AIPipeline | http_rev.py:57 | [HTTPProducer] Network error trying to reach server: HTTPConnectionPool(host='10.61.35.243', port=1984): Max retries exceeded with url: /image (Caused by NewConnectionError("HTTPConnection(host='10.61.35.243', port=1984): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-02-22 11:29:11 | ERROR    | AIPipeline | rtsp_rev.py:39 | [RTSPProducer] Connection failed. Please check the RTSP URL or Network.
+2026-02-22 11:29:14 | ERROR    | AIPipeline | rtsp_rev.py:39 | [RTSPProducer] Connection failed. Please check the RTSP URL or Network.
+2026-02-22 11:29:17 | ERROR    | AIPipeline | rtsp_rev.py:39 | [RTSPProducer] Connection failed. Please check the RTSP URL or Network.
+2026-02-22 11:29:20 | ERROR    | AIPipeline | rtsp_rev.py:39 | [RTSPProducer] Connection failed. Please check the RTSP URL or Network.
+2026-02-22 11:29:23 | ERROR    | AIPipeline | rtsp_rev.py:39 | [RTSPProducer] Connection failed. Please check the RTSP URL or Network.
+2026-02-22 11:29:26 | ERROR    | AIPipeline | rtsp_rev.py:39 | [RTSPProducer] Connection failed. Please check the RTSP URL or Network.

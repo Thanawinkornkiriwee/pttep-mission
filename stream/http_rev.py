@@ -95,6 +95,7 @@ class HTTPRECEIVEProducer(BaseInputProducer):
                         pass
                         
                 self.frame_queue.put(frame)
+                self.logger.debug("[HTTPProducer] Successfully grabbed a frame and put it in queue.")
                 
                 # Normal polling interval (1 second)
                 time.sleep(1.0)
