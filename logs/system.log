@@ -411,3 +411,42 @@
 2026-02-22 18:47:46 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found flange, routing cropped image to Classification Task.
 2026-02-22 18:47:46 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found flange, routing cropped image to Classification Task.
 2026-02-22 18:47:46 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found flange, routing cropped image to Classification Task.
+2026-02-22 18:47:47 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 18:47:47 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found handwheel-handle, routing cropped image to Classification Task.
+2026-02-22 18:47:47 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found flange, routing cropped image to Classification Task.
+2026-02-22 18:47:47 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found flange, routing cropped image to Classification Task.
+2026-02-22 18:47:47 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found flange, routing cropped image to Classification Task.
+2026-02-22 18:47:47 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found flange, routing cropped image to Classification Task.
+2026-02-22 18:47:47 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found flange, routing cropped image to Classification Task.
+2026-02-22 18:47:47 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found flange, routing cropped image to Classification Task.
+2026-02-22 18:47:48 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 18:47:48 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found flange, routing cropped image to Classification Task.
+2026-02-22 18:47:48 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found valve-body, routing cropped image to Classification Task.
+2026-02-22 18:47:48 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found flange, routing cropped image to Classification Task.
+2026-02-22 18:47:49 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 18:47:49 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found handwheel-handle, routing cropped image to Classification Task.
+2026-02-22 18:47:49 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found valve-body, routing cropped image to Classification Task.
+2026-02-22 18:47:49 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found handwheel-valve, routing cropped image to Classification Task.
+2026-02-22 18:47:49 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found flange, routing cropped image to Classification Task.
+2026-02-22 18:47:49 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found flange, routing cropped image to Classification Task.
+2026-02-22 18:47:49 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found actuator, routing cropped image to Classification Task.
+2026-02-22 18:47:49 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found control-valve, routing cropped image to Classification Task.
+2026-02-22 18:47:49 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found control-valve-stem, routing cropped image to Classification Task.
+2026-02-22 18:47:50 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 18:47:50 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found actuator, routing cropped image to Classification Task.
+2026-02-22 18:47:50 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found valve-body, routing cropped image to Classification Task.
+2026-02-22 18:47:50 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found flange, routing cropped image to Classification Task.
+2026-02-22 18:47:50 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found flange, routing cropped image to Classification Task.
+2026-02-22 18:47:50 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found control-valve-stem, routing cropped image to Classification Task.
+2026-02-22 18:47:51 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 18:47:51 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found actuator, routing cropped image to Classification Task.
+2026-02-22 18:47:51 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found control-valve-stem, routing cropped image to Classification Task.
+2026-02-22 18:47:52 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-22 18:47:52 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found flange, routing cropped image to Classification Task.
+2026-02-22 18:47:52 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found actuator, routing cropped image to Classification Task.
+2026-02-22 18:47:52 | DEBUG    | AIPipeline | task_manager.py:79 | [Router] Found analog-gauge, routing cropped image to Analog Task.
+2026-02-22 18:47:52 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found actuator, routing cropped image to Classification Task.
+2026-02-22 18:47:52 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found control-valve, routing cropped image to Classification Task.
+2026-02-22 18:47:52 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found lever-valve, routing cropped image to Classification Task.
+2026-02-22 18:47:52 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found lever-handle, routing cropped image to Classification Task.
+2026-02-22 18:47:52 | DEBUG    | AIPipeline | task_manager.py:84 | [Router] Found control-valve-stem, routing cropped image to Classification Task.
