@@ -9,7 +9,7 @@ gi.require_version('GstRtspServer', '1.0')
 from gi.repository import Gst, GstRtspServer, GLib
 
 class QueueMediaFactory(GstRtspServer.RTSPMediaFactory):
-    """Factory สำหรับดึงภาพจาก Queue ไปสร้างเป็นสตรีมวิดีโอ"""
+    """Factory สำหรับดึงภาพจาก Queue ไปสร้างเป็นสตรีมวิดีโอ (ใช้โครงสร้างเดียวกับ simulate_stream)"""
     def __init__(self, output_queue, fps, width, height):
         super().__init__()
         self.output_queue = output_queue
@@ -19,6 +19,7 @@ class QueueMediaFactory(GstRtspServer.RTSPMediaFactory):
         self.duration = 1 / self.fps * Gst.SECOND  
         self.number_frames = 0
         
+        # ใช้ h264 encoding แบบเดียวกับที่คุณทำใน simulate_stream.py
         self.launch_string = (
             f'appsrc name=source is-live=true block=true format=GST_FORMAT_TIME '
             f'caps=video/x-raw,format=BGR,width={self.width},height={self.height},framerate={self.fps}/1 '
@@ -37,7 +38,7 @@ class QueueMediaFactory(GstRtspServer.RTSPMediaFactory):
 
     def on_need_data(self, src, length):
         try:
-            # ดึงภาพจากคิว
+            # ดึงภาพจากคิวแบบไม่ให้ Thread ค้าง
             frame = self.output_queue.get(timeout=0.1)
             
             data = frame.tobytes()
@@ -64,20 +65,27 @@ class RTSPOUTPUTProducer(threading.Thread):
         self.daemon = True
         self.logger = logging.getLogger("AIPipeline")
         
-        # ดึงการตั้งค่า IP และ Port เตรียมไว้
         self.ip_address = str(self.config.get('ip_address', '0.0.0.0'))
         self.port = str(self.config.get('port', 8555))
         self.mount = self.config.get('mount', '/result')
         self.width = self.config.get('width', 640)
         self.height = self.config.get('height', 480)
         self.fps = self.config.get('fps', 30)
-        
-        self.loop = None
-        self.server = None
+
+        # Initialize Gst เพียงครั้งเดียว
+        if not Gst.is_initialized():
+            Gst.init(None)
 
     def run(self):
-        """ย้ายการสร้างและผูก Server มาไว้ใน Thread เดียวกับ Loop"""
-        Gst.init(None)
+        # ==========================================
+        # การแก้ไขหลัก: สร้าง GLib Context เฉพาะสำหรับ Thread นี้
+        # ==========================================
+        self.context = GLib.MainContext.new()
+        self.loop = GLib.MainLoop(self.context)
+        
+        # บังคับให้ GStreamer ใช้ Context ของ Thread นี้
+        self.context.push_thread_default()
+        
         self.server = GstRtspServer.RTSPServer()
         self.server.set_address(self.ip_address)
         self.server.set_service(self.port)
@@ -85,16 +93,18 @@ class RTSPOUTPUTProducer(threading.Thread):
         factory = QueueMediaFactory(self.output_queue, self.fps, self.width, self.height)
         factory.set_shared(True)
         self.server.get_mount_points().add_factory(self.mount, factory)
-        self.server.attach(None)
+        
+        # เปลี่ยนจาก attach(None) เป็น attach(self.context)
+        self.server.attach(self.context)
         
         display_ip = "ANY_IP (0.0.0.0)" if self.ip_address == "0.0.0.0" else self.ip_address
         self.logger.info(f"[RTSPOutput] Result Stream is LIVE at rtsp://{display_ip}:{self.port}{self.mount}")
         
-        self.loop = GLib.MainLoop()
+        # สั่งรันลูป (พอร์ต 8555 จะถูกเปิดตรงนี้)
         self.loop.run()
 
     def stop(self):
         self.running = False
-        if self.loop is not None:
+        if hasattr(self, 'loop') and self.loop is not None:
             self.loop.quit()
         self.logger.debug("[RTSPOutput] Stop signal received.")
