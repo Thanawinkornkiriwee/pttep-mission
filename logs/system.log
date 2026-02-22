@@ -107,3 +107,22 @@
 2026-02-22 11:15:03 | WARNING  | AIPipeline | http_rev.py:47 | [HTTPProducer] No image tag found in HTML. Make sure the media folder has images.
 2026-02-22 11:15:04 | INFO     | AIPipeline | main.py:59 | KeyboardInterrupt detected. Shutting down pipeline gracefully...
 2026-02-22 11:15:04 | DEBUG    | AIPipeline | base_input.py:32 | [HTTPRECEIVEProducer] Stop signal received.
+2026-02-22 11:20:21 | INFO     | AIPipeline | main.py:20 | === Starting AI Pipeline in [IMAGE] mode ===
+2026-02-22 11:20:21 | DEBUG    | AIPipeline | main.py:30 | Frame queue initialized with maxsize=1
+2026-02-22 11:20:21 | INFO     | AIPipeline | http_rev.py:15 | [HTTPProducer] Starting to poll images from: http://10.61.35.243:1984/image
+2026-02-22 11:20:21 | INFO     | AIPipeline | main.py:50 | Pipeline is running. Press Ctrl+C to stop.
+2026-02-22 11:24:07 | ERROR    | AIPipeline | http_rev.py:57 | [HTTPProducer] Network error trying to reach server: HTTPConnectionPool(host='10.61.35.243', port=1984): Max retries exceeded with url: /image (Caused by NewConnectionError("HTTPConnection(host='10.61.35.243', port=1984): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-02-22 11:24:08 | ERROR    | AIPipeline | http_rev.py:57 | [HTTPProducer] Network error trying to reach server: HTTPConnectionPool(host='10.61.35.243', port=1984): Max retries exceeded with url: /image (Caused by NewConnectionError("HTTPConnection(host='10.61.35.243', port=1984): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-02-22 11:24:09 | ERROR    | AIPipeline | http_rev.py:57 | [HTTPProducer] Network error trying to reach server: HTTPConnectionPool(host='10.61.35.243', port=1984): Max retries exceeded with url: /image (Caused by NewConnectionError("HTTPConnection(host='10.61.35.243', port=1984): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-02-22 11:24:10 | ERROR    | AIPipeline | http_rev.py:57 | [HTTPProducer] Network error trying to reach server: HTTPConnectionPool(host='10.61.35.243', port=1984): Max retries exceeded with url: /image (Caused by NewConnectionError("HTTPConnection(host='10.61.35.243', port=1984): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-02-22 11:24:11 | ERROR    | AIPipeline | http_rev.py:57 | [HTTPProducer] Network error trying to reach server: HTTPConnectionPool(host='10.61.35.243', port=1984): Max retries exceeded with url: /image (Caused by NewConnectionError("HTTPConnection(host='10.61.35.243', port=1984): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-02-22 11:24:12 | ERROR    | AIPipeline | http_rev.py:57 | [HTTPProducer] Network error trying to reach server: HTTPConnectionPool(host='10.61.35.243', port=1984): Max retries exceeded with url: /image (Caused by NewConnectionError("HTTPConnection(host='10.61.35.243', port=1984): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-02-22 11:24:13 | ERROR    | AIPipeline | http_rev.py:57 | [HTTPProducer] Network error trying to reach server: HTTPConnectionPool(host='10.61.35.243', port=1984): Max retries exceeded with url: /image (Caused by NewConnectionError("HTTPConnection(host='10.61.35.243', port=1984): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-02-22 11:26:16 | INFO     | AIPipeline | main.py:59 | KeyboardInterrupt detected. Shutting down pipeline gracefully...
+2026-02-22 11:26:16 | DEBUG    | AIPipeline | base_input.py:32 | [HTTPRECEIVEProducer] Stop signal received.
+2026-02-22 11:26:20 | INFO     | AIPipeline | main.py:20 | === Starting AI Pipeline in [IMAGE] mode ===
+2026-02-22 11:26:20 | DEBUG    | AIPipeline | main.py:30 | Frame queue initialized with maxsize=1
+2026-02-22 11:26:20 | INFO     | AIPipeline | http_rev.py:24 | [HTTPProducer] Starting to poll images from: http://10.61.35.243:1984/image
+2026-02-22 11:26:20 | INFO     | AIPipeline | main.py:50 | Pipeline is running. Press Ctrl+C to stop.
+2026-02-22 11:26:33 | WARNING  | AIPipeline | http_rev.py:74 | [HTTPProducer] Connection lost. Server might be down. Retrying in background...
+2026-02-22 11:26:42 | INFO     | AIPipeline | http_rev.py:35 | [HTTPProducer] Connection re-established successfully.
