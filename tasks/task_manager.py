@@ -11,7 +11,7 @@ from tasks.object_detection_task import YOLOTask
 # from tasks.classification_task import ClassificationTask
 
 class TaskManager(threading.Thread):
-    def __init__(self, config: dict, frame_queue: queue.Queue):
+    def __init__(self, config: dict, frame_queue: queue.Queue,output_queue: queue.Queue):
         super().__init__()
         self.config = config
         self.frame_queue = frame_queue
@@ -21,10 +21,12 @@ class TaskManager(threading.Thread):
         
         self.yolo = YOLOTask(config)
         
-        # 2. เตรียมแผนกอื่นๆ (คอมเมนต์ไว้ก่อน)
+      
         # self.ocr_task = OCRTask(config)
         # self.analog_task = AnalogTask(config)
         # self.classification_task = ClassificationTask(config)
+
+        self.output_queue = output_queue
 
     def run(self):
         self.logger.info("[TaskManager] Started pulling frames for AI Processing.")
@@ -37,6 +39,17 @@ class TaskManager(threading.Thread):
                 
              
                 detection_result = self.yolo.execute(frame)
+
+                annotated_frame = detection_result.plot()
+                
+                out_w = self.config.get('output_stream', {}).get('width', 640)
+                out_h = self.config.get('output_stream', {}).get('height', 480)
+                
+                out_frame = cv2.resize(annotated_frame, (out_w, out_h))
+                
+                if not self.output_queue.full():
+                    self.output_queue.put(out_frame)
+                
                 boxes = detection_result.boxes
                 
                 if len(boxes) > 0:
