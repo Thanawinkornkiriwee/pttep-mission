@@ -4,6 +4,7 @@ system:
 
 receive_img:
   rtsp_url: "rtsp://10.61.35.243:8554/stream"
+  http_url: "http://10.61.35.243:1984/image"
   buffer_size: 1             
 
 object_detection:
