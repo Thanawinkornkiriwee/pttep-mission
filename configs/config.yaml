@@ -8,7 +8,6 @@ receive_img:
   buffer_size: 1             
 
 object_detection:
-  yolo_model: "yolo11n.pt"
+  yolo_model: "models/obj_model/best.engine"
   confidence_threshold: 0.5
   img_size: 640
-
