@@ -14153,3 +14153,43 @@ UnboundLocalError: cannot access local variable 'cls_id' where it is not associa
                                   ^^^^^^
 UnboundLocalError: cannot access local variable 'cls_id' where it is not associated with a value
 
+2026-02-23 23:16:31 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:16:31 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:31 | DEBUG    | AIPipeline | task_manager.py:92 | Traceback (most recent call last):
+  File "/home/engineer00/winworkspace/PTTEP/MissionAI/tasks/task_manager.py", line 46, in run
+    label = detection_result.names[cls_id]
+                                  ^^^^^^
+UnboundLocalError: cannot access local variable 'cls_id' where it is not associated with a value
+
+2026-02-23 23:16:32 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:16:32 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:32 | DEBUG    | AIPipeline | task_manager.py:92 | Traceback (most recent call last):
+  File "/home/engineer00/winworkspace/PTTEP/MissionAI/tasks/task_manager.py", line 46, in run
+    label = detection_result.names[cls_id]
+                                  ^^^^^^
+UnboundLocalError: cannot access local variable 'cls_id' where it is not associated with a value
+
+2026-02-23 23:16:33 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:16:33 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:33 | DEBUG    | AIPipeline | task_manager.py:92 | Traceback (most recent call last):
+  File "/home/engineer00/winworkspace/PTTEP/MissionAI/tasks/task_manager.py", line 46, in run
+    label = detection_result.names[cls_id]
+                                  ^^^^^^
+UnboundLocalError: cannot access local variable 'cls_id' where it is not associated with a value
+
+2026-02-23 23:16:34 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:16:34 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:34 | DEBUG    | AIPipeline | task_manager.py:92 | Traceback (most recent call last):
+  File "/home/engineer00/winworkspace/PTTEP/MissionAI/tasks/task_manager.py", line 46, in run
+    label = detection_result.names[cls_id]
+                                  ^^^^^^
+UnboundLocalError: cannot access local variable 'cls_id' where it is not associated with a value
+
+2026-02-23 23:16:35 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:16:35 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:35 | DEBUG    | AIPipeline | task_manager.py:92 | Traceback (most recent call last):
+  File "/home/engineer00/winworkspace/PTTEP/MissionAI/tasks/task_manager.py", line 46, in run
+    label = detection_result.names[cls_id]
+                                  ^^^^^^
+UnboundLocalError: cannot access local variable 'cls_id' where it is not associated with a value
+

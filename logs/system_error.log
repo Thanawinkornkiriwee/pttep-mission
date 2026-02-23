@@ -170,3 +170,8 @@
 2026-02-23 23:16:28 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
 2026-02-23 23:16:29 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
 2026-02-23 23:16:30 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:31 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:32 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:33 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:34 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:35 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
