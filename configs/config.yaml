@@ -29,6 +29,6 @@ object_detection:
 
 
 ocr:
-  model_dir: "MissionAI/models/digital_gauge_model/best_model.pt"
+  model_dir: "models/digital_gauge_model/best_model.pt"
   device: "cuda"
   confidence_threshold: 0.8

@@ -45,7 +45,7 @@ class OCRTask:
     def _initialize_model(self):
         
         config_path = os.path.join(self.model_dir, "config.json")
-        ckpt_path = os.path.join(self.model_dir, "best_model.pt")
+        ckpt_path = self.model_dir
 
         if not os.path.exists(config_path) or not os.path.exists(ckpt_path):
             self.logger.error(f"[OCRTask] Model files missing. Please check model_dir: {self.model_dir}")

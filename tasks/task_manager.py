@@ -11,20 +11,16 @@ from tasks.ocr_task import OCRTask
 # from tasks.classification_task import ClassificationTask
 
 class TaskManager(threading.Thread):
-    def __init__(self, config: dict, frame_queue: queue.Queue, output_queues: dict):
+    def __init__(self, config: dict, frame_queue: queue.Queue, output_queues: dict): # รับเป็น dict
         super().__init__()
-        self.logger = logging.getLogger("AIPipeline") # เพิ่ม Logger
         self.config = config
         self.frame_queue = frame_queue
         self.output_queues = output_queues
         self.running = True
 
-        # ==========================================
-        # ต้องสร้างอ็อบเจกต์โมเดลตรงนี้ครับ (แก้ Error จุดที่ 1)
-        # ==========================================
-        self.logger.info("[TaskManager] Initializing AI Models...")
+        # >>> ต้องมี 2 บรรทัดนี้ด้วยครับ <<<
         self.yolo = YOLOTask(config)
-        self.ocr_task = OCRTask(config) # ถ้าเขียนไฟล์เสร็จแล้ว เปิดคอมเมนต์บรรทัดนี้ได้เลย
+        self.ocr_task = OCRTask(config)
 
     def push_to_stream(self, stream_name, img):
         if stream_name in self.output_queues and img is not None:
@@ -57,31 +53,27 @@ class TaskManager(threading.Thread):
                 boxes = detection_result.boxes
                 if boxes is not None and len(boxes) > 0:
                     for box in boxes:
-                        # 1. ดึง Class ID ออกมาอย่างปลอดภัย
+                        # ใช้ .item() เพื่อดึงตัวเลขออกจาก Tensor ของ PyTorch อย่างปลอดภัย
                         cls_id = int(box.cls[0].item())
-                        print('xxxxxxxxxxxxxxxxxxxx',cls_id)
-                        
-                        # 2. แปลง Class ID เป็นชื่อ Label
                         label = detection_result.names[cls_id] 
                         
-                        # 3. ดึงพิกัดกรอบ (Bounding Box)
                         x1, y1, x2, y2 = map(int, box.xyxy[0].tolist())
-                        
                         cropped_img = frame[y1:y2, x1:x2]
+                        
                         if cropped_img.size == 0: 
                             continue
                         
+                        # 2. ถ้าเป็น OCR
                         if label == "digital-gauge": 
+                            # ตรวจสอบว่าเปิดใช้งาน self.ocr_task หรือยัง ใน __init__
                             text, conf = self.ocr_task.execute(cropped_img)
                             if text:
-                                # วาดผลลัพธ์ลงบนรูปที่ถูกตัด
                                 ocr_display = cropped_img.copy()
                                 cv2.putText(ocr_display, text, (5, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
-                                
-                                # โยนรูปที่ถูกตัดเข้าสตรีม OCR (ไม่ต้องสนใจเรื่องรูปเล็ก เพราะ push_to_stream จะย่อ/ขยายให้เอง)
                                 self.push_to_stream('ocr', ocr_display)
                                 
                         elif label == "analog-gauge":
+                            # ลองโยนรูปเข้าสตรีมแบบไม่ต้อง pass เพื่อเทสการแสดงผล
                             self.push_to_stream('analog', cropped_img)
                             
             except queue.Empty:
