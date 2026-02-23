@@ -11,6 +11,7 @@ def setup_logger(config=None):
     
     # Define default fallback configuration if config is not provided
     if config is None:
+        
         config = {
             'system': {
                 'log_level': 'INFO',

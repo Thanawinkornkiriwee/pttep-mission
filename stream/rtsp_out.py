@@ -1,7 +1,9 @@
 import threading
 import queue
 import logging
+import cv2
 import gi
+import numpy as np 
 
 gi.require_version('Gst', '1.0')
 gi.require_version('GstRtspServer', '1.0')
@@ -23,44 +25,49 @@ class RTSPOUTPUTProducer(threading.Thread):
         self.height = self.config.get('height', 480)
         self.fps = self.config.get('fps', 30)
         
-        # คำนวณระยะเวลาต่อเฟรม
         self.duration = int((1.0 / self.fps) * Gst.SECOND)
         self.number_frames = 0
         
         self.loop = None
         self.server = None
+        self.last_frame = None  
 
     def on_media_configure(self, factory, media):
-        """ทำงานทันทีที่มี VLC หรือ Client กดดูสตรีม (เชื่อม appsrc เข้ากับ Queue)"""
         self.number_frames = 0
         appsrc = media.get_element().get_child_by_name('source')
         if appsrc:
-            # สั่งให้ appsrc ทักมาขอภาพจากฟังก์ชัน on_need_data
             appsrc.connect('need-data', self.on_need_data)
 
     def on_need_data(self, src, length):
-        """ดึงภาพจาก Output Queue มาสร้างเป็นวิดีโอ RTSP"""
+        
         try:
-            frame = self.output_queue.get(timeout=0.1)
             
-            data = frame.tobytes()
-            buf = Gst.Buffer.new_allocate(None, len(data), None)
-            buf.fill(0, data)
-            buf.duration = self.duration
-            
-            # ประทับตราเวลา
-            timestamp = self.number_frames * self.duration
-            buf.pts = buf.dts = timestamp
-            buf.offset = timestamp
-            
-            self.number_frames += 1
-            src.emit('push-buffer', buf)
+            frame = self.output_queue.get_nowait()
+            self.last_frame = frame 
             
         except queue.Empty:
-            pass
+            
+            frame = self.last_frame
+
+       
+        if frame is None:
+            frame = np.zeros((self.height, self.width, 3), dtype=np.uint8)
+
+       
+        data = frame.tobytes()
+        buf = Gst.Buffer.new_allocate(None, len(data), None)
+        buf.fill(0, data)
+        buf.duration = self.duration
+        
+        
+        timestamp = self.number_frames * self.duration
+        buf.pts = buf.dts = timestamp
+        buf.offset = timestamp
+        
+        self.number_frames += 1
+        src.emit('push-buffer', buf)
 
     def run(self):
-        """สร้าง Server และผูก Loop ให้อยู่ใน Thread เดียวกัน 100%"""
         if not Gst.is_initialized():
             Gst.init(None)
 
@@ -68,10 +75,8 @@ class RTSPOUTPUTProducer(threading.Thread):
         self.server.set_address(self.ip_address)
         self.server.set_service(self.port)
         
-        # 1. ใช้ Factory มาตรฐานแบบเดียวกับ simulate_stream.py เป๊ะ!
         factory = GstRtspServer.RTSPMediaFactory()
         
-        # 2. Pipeline โดยใช้ appsrc รับภาพจากหน่วยความจำ
         launch_string = (
             f'appsrc name=source is-live=true block=true format=GST_FORMAT_TIME '
             f'caps=video/x-raw,format=BGR,width={self.width},height={self.height},framerate={self.fps}/1 '
@@ -82,7 +87,6 @@ class RTSPOUTPUTProducer(threading.Thread):
         factory.set_launch(launch_string)
         factory.set_shared(True)
         
-        # 3. ให้ Factory เรียก on_media_configure เมื่อระบบเริ่มทำงาน
         factory.connect("media-configure", self.on_media_configure)
         
         self.server.get_mount_points().add_factory(self.mount, factory)
@@ -91,7 +95,6 @@ class RTSPOUTPUTProducer(threading.Thread):
         display_ip = "ANY_IP (0.0.0.0)" if self.ip_address == "0.0.0.0" else self.ip_address
         self.logger.info(f"[RTSPOutput] Result Stream is LIVE at rtsp://{display_ip}:{self.port}{self.mount}")
         
-        # รัน MainLoop ใน Thread นี้
         self.loop = GLib.MainLoop()
         self.loop.run()
 
