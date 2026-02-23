@@ -54,7 +54,7 @@ class TaskManager(threading.Thread):
                         cls_id = int(box.cls[0].item())
                         
                         label = detection_result.names[cls_id] 
-                        # print('xxxxxxxxxxxxxxxxxxxxxxxxx',label)
+                      
                         
                         x1, y1, x2, y2 = map(int, box.xyxy[0].tolist())
                         cropped_img = frame[y1:y2, x1:x2]
@@ -64,9 +64,7 @@ class TaskManager(threading.Thread):
                         if label == "digital-gauge": 
                            
                             text, conf = self.ocr_task.execute(cropped_img)
-                            # print('000000000000000000000000000000',text)
                             if text:
-                                
                                 ocr_display = cropped_img.copy()
                                 cv2.putText(ocr_display, text, (5, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
                                 self.push_to_stream('ocr', ocr_display)

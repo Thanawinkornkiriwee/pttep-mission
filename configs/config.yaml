@@ -29,6 +29,8 @@ object_detection:
 
 
 ocr:
-  model_dir: "models/digital_gauge_model/best_model.pt"
+  model_dir: "models/digital_gauge_model/ocr/best_model.pt"
   device: "cuda"
   confidence_threshold: 0.8
+  display_yolo_model: "models/digital_gauge_model/display/best.pt" 
+  display_confidence_threshold: 0.5
