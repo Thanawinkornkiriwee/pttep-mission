@@ -104,7 +104,7 @@ class RTSPOUTPUTProducer(threading.Thread):
                 factory.connect("media-configure", handler.on_media_configure)
                 self.server.get_mount_points().add_factory(mount_path, factory)
                 self.logger.info(f"[{stream_name.upper()} Stream] LIVE at rtsp://{display_ip}:{self.port}{mount_path}")
-
+        self.server.attach(None)
         self.loop = GLib.MainLoop()
         self.loop.run()
 
