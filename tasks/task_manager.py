@@ -16,7 +16,7 @@ class TaskManager(threading.Thread):
         self.config = config
         self.frame_queue = frame_queue
         self.output_queues = output_queues
-        # ... (โค้ดโหลดโมเดลอื่นๆ เหมือนเดิม) ...
+        self.running = True
 
     def push_to_stream(self, stream_name, img):
         """ฟังก์ชันช่วยย่อภาพและยัดลงตะกร้าแบบอัตโนมัติ"""
@@ -68,3 +68,7 @@ class TaskManager(threading.Thread):
                             
             except queue.Empty:
                 continue
+
+
+    def stop(self):
+        self.running = False
