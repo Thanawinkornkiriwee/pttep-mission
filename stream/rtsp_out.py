@@ -79,7 +79,7 @@ class RTSPOUTPUTProducer(threading.Thread):
         self.server = GstRtspServer.RTSPServer()
         self.server.set_address(self.ip_address)
         self.server.set_service(self.port)
-        display_ip = "127.0.0.1" if self.ip_address == "0.0.0.0" else self.ip_address
+        display_ip = "10.61.35.243" if self.ip_address == "0.0.0.0" else self.ip_address
         
         # วนลูปสร้างเส้นทาง (Mount Point) สำหรับทุกตะกร้าที่ระบุไว้ใน Config
         for stream_name, mount_path in self.mounts.items():

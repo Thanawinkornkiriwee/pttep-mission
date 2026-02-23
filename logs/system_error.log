@@ -1,0 +1,172 @@
+2026-02-23 22:53:40 | ERROR    | AIPipeline | rtsp_rev.py:54 | [RTSPProducer] Empty frame received. Triggering reconnection...
+2026-02-23 23:03:33 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:03:34 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:03:35 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:03:50 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:03:51 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:03:52 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:04:02 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:04:03 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:04:04 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:04:14 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:04:15 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:04:16 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:04:26 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:04:27 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:04:28 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:04:39 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:04:40 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:04:41 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:04:51 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:04:52 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:04:53 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:05:03 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:05:04 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:05:05 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:05:15 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:05:16 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:05:17 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:05:27 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:05:28 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:05:29 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:05:39 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:05:40 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:05:41 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:05:51 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:05:52 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:05:53 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:06:03 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:06:04 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:06:05 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:06:16 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:06:17 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:06:18 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:06:28 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:06:29 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:06:30 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:06:40 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:06:41 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:06:42 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:06:52 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:06:53 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:06:54 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:07:04 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:07:05 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:07:06 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:07:20 | ERROR    | AIPipeline | rtsp_rev.py:39 | [RTSPProducer] Connection failed. Please check the RTSP URL or Network.
+2026-02-23 23:07:26 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:07:26 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:07:27 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:07:37 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:07:38 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:07:39 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:07:50 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:07:51 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:07:52 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:08:02 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:08:03 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:08:04 | ERROR    | AIPipeline | task_manager.py:83 | [TaskManager] Critical error in AI loop: 'TaskManager' object has no attribute 'ocr_task'
+2026-02-23 23:08:13 | ERROR    | AIPipeline | ocr_task.py:51 | [OCRTask] Model files missing. Please check model_dir: MissionAI/models/digital_gauge_model/best_model.pt
+2026-02-23 23:09:18 | ERROR    | AIPipeline | ocr_task.py:51 | [OCRTask] Model files missing. Please check model_dir: MissionAI/models/digital_gauge_model/best_model.pt
+2026-02-23 23:11:18 | ERROR    | AIPipeline | ocr_task.py:51 | [OCRTask] Model files missing. Please check model_dir: MissionAI/models/digital_gauge_model/best_model.pt
+2026-02-23 23:11:19 | ERROR    | AIPipeline | task_manager.py:85 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:11:19 | ERROR    | AIPipeline | task_manager.py:85 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:11:20 | ERROR    | AIPipeline | task_manager.py:85 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:11:21 | ERROR    | AIPipeline | task_manager.py:85 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:11:22 | ERROR    | AIPipeline | task_manager.py:85 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:11:23 | ERROR    | AIPipeline | task_manager.py:85 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:11:24 | ERROR    | AIPipeline | task_manager.py:85 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:11:25 | ERROR    | AIPipeline | task_manager.py:85 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:11:26 | ERROR    | AIPipeline | task_manager.py:85 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:11:27 | ERROR    | AIPipeline | task_manager.py:85 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:11:28 | ERROR    | AIPipeline | task_manager.py:85 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:11:29 | ERROR    | AIPipeline | task_manager.py:85 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:11:30 | ERROR    | AIPipeline | task_manager.py:85 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:11:50 | ERROR    | AIPipeline | ocr_task.py:51 | [OCRTask] Model files missing. Please check model_dir: MissionAI/models/digital_gauge_model/best_model.pt
+2026-02-23 23:11:51 | ERROR    | AIPipeline | task_manager.py:88 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:11:51 | ERROR    | AIPipeline | task_manager.py:88 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:11:52 | ERROR    | AIPipeline | task_manager.py:88 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:11:53 | ERROR    | AIPipeline | task_manager.py:88 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:11:54 | ERROR    | AIPipeline | task_manager.py:88 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:11:55 | ERROR    | AIPipeline | task_manager.py:88 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:11:56 | ERROR    | AIPipeline | task_manager.py:88 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:11:57 | ERROR    | AIPipeline | task_manager.py:88 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:11:58 | ERROR    | AIPipeline | task_manager.py:88 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:11:59 | ERROR    | AIPipeline | task_manager.py:88 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:12:16 | ERROR    | AIPipeline | ocr_task.py:51 | [OCRTask] Model files missing. Please check model_dir: MissionAI/models/digital_gauge_model/best_model.pt
+2026-02-23 23:12:17 | ERROR    | AIPipeline | task_manager.py:88 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:12:17 | ERROR    | AIPipeline | task_manager.py:88 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:12:18 | ERROR    | AIPipeline | task_manager.py:88 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:12:19 | ERROR    | AIPipeline | task_manager.py:88 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:12:20 | ERROR    | AIPipeline | task_manager.py:88 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:12:21 | ERROR    | AIPipeline | task_manager.py:88 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:12:22 | ERROR    | AIPipeline | task_manager.py:88 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:12:23 | ERROR    | AIPipeline | task_manager.py:88 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:12:24 | ERROR    | AIPipeline | task_manager.py:88 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:12:25 | ERROR    | AIPipeline | task_manager.py:88 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:12:26 | ERROR    | AIPipeline | task_manager.py:88 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:14:27 | ERROR    | AIPipeline | ocr_task.py:51 | [OCRTask] Model files missing. Please check model_dir: MissionAI/models/digital_gauge_model/best_model.pt
+2026-02-23 23:14:28 | ERROR    | AIPipeline | task_manager.py:94 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:14:28 | ERROR    | AIPipeline | task_manager.py:94 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:14:29 | ERROR    | AIPipeline | task_manager.py:94 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:14:30 | ERROR    | AIPipeline | task_manager.py:94 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:15:13 | ERROR    | AIPipeline | ocr_task.py:51 | [OCRTask] Model files missing. Please check model_dir: MissionAI/models/digital_gauge_model/best_model.pt
+2026-02-23 23:15:14 | ERROR    | AIPipeline | task_manager.py:90 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:15:14 | ERROR    | AIPipeline | task_manager.py:90 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:15:15 | ERROR    | AIPipeline | task_manager.py:90 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:15:16 | ERROR    | AIPipeline | task_manager.py:90 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:15:37 | ERROR    | AIPipeline | ocr_task.py:51 | [OCRTask] Model files missing. Please check model_dir: MissionAI/models/digital_gauge_model/best_model.pt
+2026-02-23 23:15:37 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:15:38 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:15:39 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:15:40 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:15:41 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:15:42 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:15:43 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:15:44 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:15:45 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:15:46 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:15:47 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:15:48 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:15:49 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:15:50 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:15:51 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:15:52 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:15:53 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:15:54 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:15:55 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:15:56 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:15:57 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:15:58 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:15:59 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:00 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:01 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:02 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:03 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:04 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:05 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:06 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:07 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:08 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:09 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:10 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:11 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:12 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:13 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:14 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:15 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:16 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:17 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:18 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:19 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:20 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:21 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:22 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:23 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:24 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:25 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:26 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:27 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:28 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:29 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
+2026-02-23 23:16:30 | ERROR    | AIPipeline | task_manager.py:91 | [TaskManager] Critical error in AI loop: cannot access local variable 'cls_id' where it is not associated with a value
