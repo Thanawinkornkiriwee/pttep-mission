@@ -9,12 +9,18 @@ receive_img:
 
 
 output_stream:
-  ip_address: "0.0.0.0"  
-  port: 8555
-  mount: "/result"
-  width: 1920
-  height: 1080
-  fps: 30  
+  ip_address: "0.0.0.0"
+  port: 9806
+  mounts:
+    od: "/od"
+    ocr: "/ocr"
+    analog: "/analog"
+    classification: "/cls"
+  width: 640
+  height: 480
+  fps: 30
+
+
 
 object_detection:
   yolo_model: "models/obj_model/best.engine"
