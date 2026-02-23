@@ -20,3 +20,9 @@ object_detection:
   yolo_model: "models/obj_model/best.engine"
   confidence_threshold: 0.5
   img_size: 640
+
+
+ocr:
+  model_dir: "MissionAI/models/digital_gauge_model/best_model.pt"
+  device: "cuda"
+  confidence_threshold: 0.8

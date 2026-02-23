@@ -6,7 +6,7 @@ import cv2
 
 from tasks.object_detection_task import YOLOTask
 
-# from tasks.ocr_task import OCRTask
+from tasks.ocr_task import OCRTask
 # from tasks.analog_task import AnalogTask
 # from tasks.classification_task import ClassificationTask
 
@@ -22,7 +22,7 @@ class TaskManager(threading.Thread):
         self.yolo = YOLOTask(config)
         
       
-        # self.ocr_task = OCRTask(config)
+        self.ocr_task = OCRTask(config)
         # self.analog_task = AnalogTask(config)
         # self.classification_task = ClassificationTask(config)
 
@@ -71,9 +71,18 @@ class TaskManager(threading.Thread):
                             continue
                         
 
-                        if label == "digital-gauge":
-                            self.logger.debug(f"[Router] Found {label}, routing cropped image to OCR Task.")
-                            # result = self.ocr_task.execute(cropped_img)
+                        if label == "digital-gauge": 
+                            
+                            text, conf = self.ocr_task.execute(cropped_img)
+                            
+                            if text:
+                                self.logger.info(f"-> [OCR] Result: '{text}' (Conf: {conf:.2f})")
+                                
+                                text_display = f"{text} ({conf:.2f})"
+                                color = (0, 255, 0) if conf >= self.ocr_task.conf_threshold else (0, 0, 255)
+                                
+                                cv2.putText(annotated_frame, text_display, (x1, y1 - 10), 
+                                            cv2.FONT_HERSHEY_SIMPLEX, 0.7, color, 2)
                             
                         elif label == "analog-gauge":
                             self.logger.debug(f"[Router] Found {label}, routing cropped image to Analog Task.")
