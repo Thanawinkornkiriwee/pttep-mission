@@ -14621,3 +14621,355 @@ UnboundLocalError: cannot access local variable 'cls_id' where it is not associa
 2026-02-23 23:21:10 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
 2026-02-23 23:21:11 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
 2026-02-23 23:21:12 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:21:13 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:21:14 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:21:15 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:21:16 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:21:17 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:21:18 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:21:19 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:21:20 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:21:21 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:21:22 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:21:23 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:21:24 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:21:25 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:21:26 | INFO     | AIPipeline | main.py:81 | KeyboardInterrupt detected. Shutting down pipeline gracefully...
+2026-02-23 23:21:26 | DEBUG    | AIPipeline | base_input.py:32 | [HTTPRECEIVEProducer] Stop signal received.
+2026-02-23 23:21:26 | DEBUG    | AIPipeline | rtsp_out.py:115 | [RTSPOutput] Stop signal received.
+2026-02-23 23:21:26 | INFO     | AIPipeline | http_rev.py:107 | [HTTPProducer] Thread stopped cleanly.
+2026-02-23 23:21:26 | INFO     | AIPipeline | main.py:93 | === Pipeline shutdown complete. ===
+2026-02-23 23:23:42 | INFO     | AIPipeline | main.py:26 | === Starting AI Pipeline in [IMAGE] mode ===
+2026-02-23 23:23:42 | INFO     | AIPipeline | task_manager.py:24 | [TaskManager] Initializing AI Models...
+2026-02-23 23:23:42 | INFO     | AIPipeline | object_detection_task.py:13 | [ObjectDetectionTask] Loading YOLO model from models/obj_model/best.engine...
+2026-02-23 23:23:42 | INFO     | AIPipeline | object_detection_task.py:15 | [ObjectDetectionTask] YOLO model loaded successfully.
+2026-02-23 23:23:42 | ERROR    | AIPipeline | ocr_task.py:51 | [OCRTask] Model files missing. Please check model_dir: models/digital_gauge_model/best_model.pt
+2026-02-23 23:23:42 | INFO     | AIPipeline | http_rev.py:24 | [HTTPProducer] Starting to poll images from: http://10.61.35.243:1984/image
+2026-02-23 23:23:42 | INFO     | AIPipeline | main.py:71 | Pipeline is running. Press Ctrl+C to stop.
+2026-02-23 23:23:42 | INFO     | AIPipeline | rtsp_out.py:106 | [OD Stream] LIVE at rtsp://10.61.35.243:9806/od
+2026-02-23 23:23:42 | INFO     | AIPipeline | rtsp_out.py:106 | [OCR Stream] LIVE at rtsp://10.61.35.243:9806/ocr
+2026-02-23 23:23:42 | INFO     | AIPipeline | rtsp_out.py:106 | [ANALOG Stream] LIVE at rtsp://10.61.35.243:9806/analog
+2026-02-23 23:23:42 | INFO     | AIPipeline | rtsp_out.py:106 | [CLASSIFICATION Stream] LIVE at rtsp://10.61.35.243:9806/cls
+2026-02-23 23:23:43 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:23:44 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:23:45 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:23:46 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:23:47 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:23:48 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:23:49 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:23:50 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:23:51 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:23:52 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:23:53 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:23:54 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:23:55 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:23:56 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:23:57 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:23:58 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:23:59 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:00 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:01 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:02 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:03 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:04 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:05 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:06 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:07 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:08 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:09 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:10 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:11 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:12 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:13 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:14 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:15 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:16 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:17 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:18 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:19 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:20 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:21 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:22 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:23 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:24 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:25 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:26 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:27 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:27 | INFO     | AIPipeline | main.py:81 | KeyboardInterrupt detected. Shutting down pipeline gracefully...
+2026-02-23 23:24:27 | DEBUG    | AIPipeline | base_input.py:32 | [HTTPRECEIVEProducer] Stop signal received.
+2026-02-23 23:24:27 | DEBUG    | AIPipeline | rtsp_out.py:115 | [RTSPOutput] Stop signal received.
+2026-02-23 23:24:37 | INFO     | AIPipeline | main.py:26 | === Starting AI Pipeline in [IMAGE] mode ===
+2026-02-23 23:24:37 | INFO     | AIPipeline | task_manager.py:24 | [TaskManager] Initializing AI Models...
+2026-02-23 23:24:37 | INFO     | AIPipeline | object_detection_task.py:13 | [ObjectDetectionTask] Loading YOLO model from models/obj_model/best.engine...
+2026-02-23 23:24:37 | INFO     | AIPipeline | object_detection_task.py:15 | [ObjectDetectionTask] YOLO model loaded successfully.
+2026-02-23 23:24:37 | ERROR    | AIPipeline | ocr_task.py:51 | [OCRTask] Model files missing. Please check model_dir: models/digital_gauge_model/best_model.pt
+2026-02-23 23:24:37 | INFO     | AIPipeline | http_rev.py:24 | [HTTPProducer] Starting to poll images from: http://10.61.35.243:1984/image
+2026-02-23 23:24:37 | INFO     | AIPipeline | main.py:71 | Pipeline is running. Press Ctrl+C to stop.
+2026-02-23 23:24:37 | INFO     | AIPipeline | rtsp_out.py:106 | [OD Stream] LIVE at rtsp://10.61.35.243:9806/od
+2026-02-23 23:24:37 | INFO     | AIPipeline | rtsp_out.py:106 | [OCR Stream] LIVE at rtsp://10.61.35.243:9806/ocr
+2026-02-23 23:24:37 | INFO     | AIPipeline | rtsp_out.py:106 | [ANALOG Stream] LIVE at rtsp://10.61.35.243:9806/analog
+2026-02-23 23:24:37 | INFO     | AIPipeline | rtsp_out.py:106 | [CLASSIFICATION Stream] LIVE at rtsp://10.61.35.243:9806/cls
+2026-02-23 23:24:37 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:38 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:39 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:40 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:41 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:42 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:43 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:44 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:45 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:46 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:47 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:48 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:49 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:50 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:51 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:52 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:53 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:54 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:55 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:56 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:57 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:58 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:24:59 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:00 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:01 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:02 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:04 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:05 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:06 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:07 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:08 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:09 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:10 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:11 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:12 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:13 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:14 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:15 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:16 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:17 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:18 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:19 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:20 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:21 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:22 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:23 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:24 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:25 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:26 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:27 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:28 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:29 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:30 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:31 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:32 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:33 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:34 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:35 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:36 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:37 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:38 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:39 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:40 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:41 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:42 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:43 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:44 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:45 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:46 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:47 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:48 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:49 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:50 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:51 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:52 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:53 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:54 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:55 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:56 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:57 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:58 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:25:59 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:00 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:01 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:02 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:03 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:04 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:05 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:06 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:07 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:08 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:09 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:10 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:11 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:12 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:13 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:14 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:15 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:16 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:17 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:18 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:19 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:20 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:21 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:22 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:23 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:24 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:25 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:26 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:27 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:28 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:29 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:30 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:31 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:32 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:33 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:34 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:36 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:37 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:38 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:39 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:40 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:41 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:42 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:43 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:44 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:45 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:46 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:47 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:48 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:49 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:50 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:51 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:52 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:53 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:54 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:55 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:56 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:57 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:58 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:26:59 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:27:00 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:27:01 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:27:02 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:27:03 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:27:04 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:27:05 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:27:06 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:27:07 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:27:08 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:27:08 | INFO     | AIPipeline | main.py:81 | KeyboardInterrupt detected. Shutting down pipeline gracefully...
+2026-02-23 23:27:08 | DEBUG    | AIPipeline | base_input.py:32 | [HTTPRECEIVEProducer] Stop signal received.
+2026-02-23 23:27:08 | DEBUG    | AIPipeline | rtsp_out.py:115 | [RTSPOutput] Stop signal received.
+2026-02-23 23:27:15 | INFO     | AIPipeline | main.py:26 | === Starting AI Pipeline in [IMAGE] mode ===
+2026-02-23 23:27:15 | INFO     | AIPipeline | task_manager.py:24 | [TaskManager] Initializing AI Models...
+2026-02-23 23:27:15 | INFO     | AIPipeline | object_detection_task.py:13 | [ObjectDetectionTask] Loading YOLO model from models/obj_model/best.engine...
+2026-02-23 23:27:15 | INFO     | AIPipeline | object_detection_task.py:15 | [ObjectDetectionTask] YOLO model loaded successfully.
+2026-02-23 23:27:15 | ERROR    | AIPipeline | ocr_task.py:51 | [OCRTask] Model files missing. Please check model_dir: models/digital_gauge_model/best_model.pt
+2026-02-23 23:27:15 | INFO     | AIPipeline | http_rev.py:24 | [HTTPProducer] Starting to poll images from: http://10.61.35.243:1984/image
+2026-02-23 23:27:15 | INFO     | AIPipeline | main.py:71 | Pipeline is running. Press Ctrl+C to stop.
+2026-02-23 23:27:15 | INFO     | AIPipeline | rtsp_out.py:106 | [OD Stream] LIVE at rtsp://10.61.35.243:9806/od
+2026-02-23 23:27:15 | INFO     | AIPipeline | rtsp_out.py:106 | [OCR Stream] LIVE at rtsp://10.61.35.243:9806/ocr
+2026-02-23 23:27:15 | INFO     | AIPipeline | rtsp_out.py:106 | [ANALOG Stream] LIVE at rtsp://10.61.35.243:9806/analog
+2026-02-23 23:27:15 | INFO     | AIPipeline | rtsp_out.py:106 | [CLASSIFICATION Stream] LIVE at rtsp://10.61.35.243:9806/cls
+2026-02-23 23:27:15 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:27:16 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:27:17 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:27:17 | INFO     | AIPipeline | main.py:81 | KeyboardInterrupt detected. Shutting down pipeline gracefully...
+2026-02-23 23:27:17 | DEBUG    | AIPipeline | base_input.py:32 | [HTTPRECEIVEProducer] Stop signal received.
+2026-02-23 23:27:17 | DEBUG    | AIPipeline | rtsp_out.py:115 | [RTSPOutput] Stop signal received.
+2026-02-23 23:27:18 | INFO     | AIPipeline | http_rev.py:107 | [HTTPProducer] Thread stopped cleanly.
+2026-02-23 23:27:18 | INFO     | AIPipeline | main.py:93 | === Pipeline shutdown complete. ===
+2026-02-23 23:27:30 | INFO     | AIPipeline | main.py:26 | === Starting AI Pipeline in [IMAGE] mode ===
+2026-02-23 23:27:30 | INFO     | AIPipeline | task_manager.py:24 | [TaskManager] Initializing AI Models...
+2026-02-23 23:27:30 | INFO     | AIPipeline | object_detection_task.py:13 | [ObjectDetectionTask] Loading YOLO model from models/obj_model/best.engine...
+2026-02-23 23:27:30 | INFO     | AIPipeline | object_detection_task.py:15 | [ObjectDetectionTask] YOLO model loaded successfully.
+2026-02-23 23:27:30 | ERROR    | AIPipeline | ocr_task.py:51 | [OCRTask] Model files missing. Please check model_dir: models/digital_gauge_model/best_model.pt
+2026-02-23 23:27:30 | INFO     | AIPipeline | http_rev.py:24 | [HTTPProducer] Starting to poll images from: http://10.61.35.243:1984/image
+2026-02-23 23:27:30 | INFO     | AIPipeline | main.py:71 | Pipeline is running. Press Ctrl+C to stop.
+2026-02-23 23:27:30 | INFO     | AIPipeline | rtsp_out.py:106 | [OD Stream] LIVE at rtsp://10.61.35.243:9806/od
+2026-02-23 23:27:30 | INFO     | AIPipeline | rtsp_out.py:106 | [OCR Stream] LIVE at rtsp://10.61.35.243:9806/ocr
+2026-02-23 23:27:30 | INFO     | AIPipeline | rtsp_out.py:106 | [ANALOG Stream] LIVE at rtsp://10.61.35.243:9806/analog
+2026-02-23 23:27:30 | INFO     | AIPipeline | rtsp_out.py:106 | [CLASSIFICATION Stream] LIVE at rtsp://10.61.35.243:9806/cls
+2026-02-23 23:27:30 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:27:31 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:27:32 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:27:33 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:27:34 | INFO     | AIPipeline | main.py:81 | KeyboardInterrupt detected. Shutting down pipeline gracefully...
+2026-02-23 23:27:34 | DEBUG    | AIPipeline | base_input.py:32 | [HTTPRECEIVEProducer] Stop signal received.
+2026-02-23 23:27:34 | DEBUG    | AIPipeline | rtsp_out.py:115 | [RTSPOutput] Stop signal received.
+2026-02-23 23:27:34 | INFO     | AIPipeline | http_rev.py:107 | [HTTPProducer] Thread stopped cleanly.
+2026-02-23 23:27:54 | INFO     | AIPipeline | main.py:26 | === Starting AI Pipeline in [IMAGE] mode ===
+2026-02-23 23:27:54 | INFO     | AIPipeline | task_manager.py:24 | [TaskManager] Initializing AI Models...
+2026-02-23 23:27:54 | INFO     | AIPipeline | object_detection_task.py:13 | [ObjectDetectionTask] Loading YOLO model from models/obj_model/best.engine...
+2026-02-23 23:27:54 | INFO     | AIPipeline | object_detection_task.py:15 | [ObjectDetectionTask] YOLO model loaded successfully.
+2026-02-23 23:27:54 | ERROR    | AIPipeline | ocr_task.py:51 | [OCRTask] Model files missing. Please check model_dir: models/digital_gauge_model/best_model.pt
+2026-02-23 23:27:54 | INFO     | AIPipeline | http_rev.py:24 | [HTTPProducer] Starting to poll images from: http://10.61.35.243:1984/image
+2026-02-23 23:27:54 | INFO     | AIPipeline | main.py:71 | Pipeline is running. Press Ctrl+C to stop.
+2026-02-23 23:27:54 | INFO     | AIPipeline | rtsp_out.py:106 | [OD Stream] LIVE at rtsp://10.61.35.243:9806/od
+2026-02-23 23:27:54 | INFO     | AIPipeline | rtsp_out.py:106 | [OCR Stream] LIVE at rtsp://10.61.35.243:9806/ocr
+2026-02-23 23:27:54 | INFO     | AIPipeline | rtsp_out.py:106 | [ANALOG Stream] LIVE at rtsp://10.61.35.243:9806/analog
+2026-02-23 23:27:54 | INFO     | AIPipeline | rtsp_out.py:106 | [CLASSIFICATION Stream] LIVE at rtsp://10.61.35.243:9806/cls
+2026-02-23 23:27:54 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:27:55 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:27:56 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:27:57 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:27:58 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:27:59 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:00 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:01 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:02 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:03 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:04 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:05 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:06 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:07 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:08 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:09 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:10 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:11 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:12 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:13 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:14 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:15 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:16 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:17 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:18 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:19 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:20 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:21 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:21 | INFO     | AIPipeline | main.py:81 | KeyboardInterrupt detected. Shutting down pipeline gracefully...
+2026-02-23 23:28:21 | DEBUG    | AIPipeline | base_input.py:32 | [HTTPRECEIVEProducer] Stop signal received.
+2026-02-23 23:28:21 | DEBUG    | AIPipeline | rtsp_out.py:115 | [RTSPOutput] Stop signal received.
+2026-02-23 23:28:34 | INFO     | AIPipeline | main.py:26 | === Starting AI Pipeline in [IMAGE] mode ===
+2026-02-23 23:28:34 | INFO     | AIPipeline | task_manager.py:24 | [TaskManager] Initializing AI Models...
+2026-02-23 23:28:34 | INFO     | AIPipeline | object_detection_task.py:13 | [ObjectDetectionTask] Loading YOLO model from models/obj_model/best.engine...
+2026-02-23 23:28:34 | INFO     | AIPipeline | object_detection_task.py:15 | [ObjectDetectionTask] YOLO model loaded successfully.
+2026-02-23 23:28:34 | ERROR    | AIPipeline | ocr_task.py:51 | [OCRTask] Model files missing. Please check model_dir: models/digital_gauge_model/best_model.pt
+2026-02-23 23:28:34 | INFO     | AIPipeline | http_rev.py:24 | [HTTPProducer] Starting to poll images from: http://10.61.35.243:1984/image
+2026-02-23 23:28:34 | INFO     | AIPipeline | main.py:71 | Pipeline is running. Press Ctrl+C to stop.
+2026-02-23 23:28:34 | INFO     | AIPipeline | rtsp_out.py:106 | [OD Stream] LIVE at rtsp://10.61.35.243:9806/od
+2026-02-23 23:28:34 | INFO     | AIPipeline | rtsp_out.py:106 | [OCR Stream] LIVE at rtsp://10.61.35.243:9806/ocr
+2026-02-23 23:28:34 | INFO     | AIPipeline | rtsp_out.py:106 | [ANALOG Stream] LIVE at rtsp://10.61.35.243:9806/analog
+2026-02-23 23:28:34 | INFO     | AIPipeline | rtsp_out.py:106 | [CLASSIFICATION Stream] LIVE at rtsp://10.61.35.243:9806/cls
+2026-02-23 23:28:34 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:35 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:36 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:37 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:38 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:39 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:40 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:41 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:42 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:43 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:44 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:45 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:46 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:47 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:48 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:50 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:51 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-23 23:28:51 | INFO     | AIPipeline | main.py:81 | KeyboardInterrupt detected. Shutting down pipeline gracefully...
+2026-02-23 23:28:51 | DEBUG    | AIPipeline | base_input.py:32 | [HTTPRECEIVEProducer] Stop signal received.
+2026-02-23 23:28:51 | DEBUG    | AIPipeline | rtsp_out.py:115 | [RTSPOutput] Stop signal received.
