@@ -35,3 +35,12 @@ ocr:
   confidence_threshold: 0.8
   display_yolo_model: "models/digital_gauge_model/display/best.pt" 
   display_confidence_threshold: 0.5
+
+
+
+classification:
+  model_path: "models/abnormally/best_model_resnet152_lr=0.001.pth"
+  dataset_root: "support_dataset"
+  img_size: 112
+  shots: 20
+  device: "cuda"

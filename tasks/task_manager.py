@@ -8,9 +8,10 @@ from cores.visualizer import Visualizer
 
 from tasks.object_detection_task import YOLOTask
 from tasks.ocr_task import OCRTask
+from tasks.classification_task import ClassificationTask
 
 # from tasks.analog_task import AnalogTask
-# from tasks.classification_task import ClassificationTask
+
 
 class TaskManager(threading.Thread):
     def __init__(self, config: dict, frame_queue: queue.Queue, output_queues: dict):
@@ -25,8 +26,9 @@ class TaskManager(threading.Thread):
         self.logger.info("[TaskManager] Initializing AI Models...")
         self.yolo = YOLOTask(config)
         self.ocr_task = OCRTask(config)
+        self.cls_task = ClassificationTask(config)
         
-        # <--- 2. สร้างอ็อบเจกต์ Visualizer
+        
         self.visualizer = Visualizer(config)
 
     def push_to_stream(self, stream_name, img):
@@ -80,7 +82,23 @@ class TaskManager(threading.Thread):
                                 self.push_to_stream('ocr', ocr_display)
                                 
                         elif label == "analog-gauge":
-                            self.push_to_stream('analog', cropped_img) 
+                            self.push_to_stream('analog', cropped_img)
+                        else:
+                            pred_class, conf = self.cls_task.execute(cropped_img)
+                            
+                            if pred_class:
+                                cls_display = cropped_img.copy()
+                                display_text = f"{pred_class.upper()} ({conf:.1f}%)"
+                                
+                             
+                                cls_display = self.visualizer.draw_unicode_text(
+                                    cls_display, 
+                                    display_text, 
+                                    position=(5, 5), 
+                                    font_size=30, 
+                                    color=(0, 255, 0) if pred_class == "normal" else (0, 0, 255) 
+                                )
+                                self.push_to_stream('cls', cls_display)
                             
             except queue.Empty:
                 continue
