@@ -9,7 +9,7 @@ from cores.visualizer import Visualizer
 from tasks.object_detection_task import YOLOTask
 from tasks.ocr_task import OCRTask
 from tasks.classification_task import ClassificationTask
-
+import numpy as np
 # from tasks.analog_task import AnalogTask
 
 
@@ -83,47 +83,44 @@ class TaskManager(threading.Thread):
                                 
                         elif label == "analog-gauge":
                             self.push_to_stream('analog', cropped_img)
-                        else: # คลาสอื่นๆ ทั้งหมดส่งเข้า Classification
+                        else:
                             pred_class, conf = self.cls_task.execute(cropped_img)
                             
                             if pred_class:
-                                print(f"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx {pred_class.upper()} ({conf:.1f}%)")
                                 
-                                # 1. สร้าง Canvas สีดำขนาดคงที่ (640x480) เพื่อให้ RTSP Stream เสถียรที่สุด
-                                import numpy as np
                                 canvas_w, canvas_h = 640, 480
                                 cls_display = np.zeros((canvas_h, canvas_w, 3), dtype=np.uint8)
                                 
-                                # 2. คำนวณอัตราส่วนเพื่อย่อ/ขยายภาพ Crop ให้พอดีกับ Canvas (ป้องกันภาพเบี้ยว)
+                               
                                 h, w = cropped_img.shape[:2]
                                 scale = min((canvas_w - 40) / w, (canvas_h - 100) / h)
                                 new_w, new_h = int(w * scale), int(h * scale)
                                 resized_crop = cv2.resize(cropped_img, (new_w, new_h))
                                 
-                                # 3. คำนวณจุดกึ่งกลางเพื่อวางภาพ
+                              
                                 x_offset = (canvas_w - new_w) // 2
-                                y_offset = (canvas_h + 50 - new_h) // 2  # เลื่อนลงมาหน่อย เพื่อเว้นที่ด้านบนให้ตัวหนังสือ
+                                y_offset = (canvas_h + 50 - new_h) // 2 
                                 
-                                # 4. แปะภาพ Crop ลงบน Canvas สีดำ
+                               
                                 cls_display[y_offset:y_offset+new_h, x_offset:x_offset+new_w] = resized_crop
                                 
-                                # 5. วาดตัวหนังสือลงไป
+                               
                                 display_text = f"CLASS: {pred_class.upper()} ({conf:.1f}%)"
                                 text_color = (0, 255, 0) if pred_class == "normal" else (0, 0, 255)
                                 
                                 cls_display = self.visualizer.draw_unicode_text(
                                     cls_display, 
                                     display_text, 
-                                    position=(20, 20),  # พิกัดข้อความด้านบนซ้าย
+                                    position=(20, 20),  
                                     font_size=36,
                                     color=text_color
                                 )
                                 
-                                # 🔍 เพิ่มบรรทัดนี้เพื่อเซฟรูปออกมาเช็คในโฟลเดอร์โปรเจกต์ ว่า AI ทำงานถูกไหม
-                                cv2.imwrite('debug_cls_stream.jpg', cls_display)
+                               
+                                # cv2.imwrite('debug_cls_stream.jpg', cls_display)
                                 
-                                # 6. โยนภาพเข้าคิว
-                                self.push_to_stream('cls', cls_display)
+                                
+                                self.push_to_stream('classification', cls_display)
                             
             except queue.Empty:
                 continue
