@@ -20348,3 +20348,8 @@ UnboundLocalError: cannot access local variable 'cls_id' where it is not associa
 2026-02-24 11:17:32 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
 2026-02-24 11:17:33 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
 2026-02-24 11:17:34 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 11:17:35 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 11:17:36 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 11:17:37 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 11:17:38 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 11:17:39 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
