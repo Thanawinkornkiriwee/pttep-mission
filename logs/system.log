@@ -19740,3 +19740,85 @@ UnboundLocalError: cannot access local variable 'cls_id' where it is not associa
 2026-02-24 10:55:42 | DEBUG    | AIPipeline | rtsp_out.py:115 | [RTSPOutput] Stop signal received.
 2026-02-24 10:55:42 | INFO     | AIPipeline | http_rev.py:107 | [HTTPProducer] Thread stopped cleanly.
 2026-02-24 10:55:42 | INFO     | AIPipeline | main.py:93 | === Pipeline shutdown complete. ===
+2026-02-24 10:56:41 | INFO     | AIPipeline | main.py:26 | === Starting AI Pipeline in [IMAGE] mode ===
+2026-02-24 10:56:41 | INFO     | AIPipeline | task_manager.py:26 | [TaskManager] Initializing AI Models...
+2026-02-24 10:56:41 | INFO     | AIPipeline | object_detection_task.py:13 | [ObjectDetectionTask] Loading YOLO model from models/obj_model/best.engine...
+2026-02-24 10:56:41 | INFO     | AIPipeline | object_detection_task.py:15 | [ObjectDetectionTask] YOLO model loaded successfully.
+2026-02-24 10:56:41 | INFO     | AIPipeline | ocr_task.py:52 | [OCRTask] Loading Display YOLO model from models/digital_gauge_model/display/best.pt...
+2026-02-24 10:56:41 | INFO     | AIPipeline | ocr_task.py:54 | [OCRTask] Display YOLO model loaded successfully.
+2026-02-24 10:56:41 | INFO     | AIPipeline | ocr_task.py:71 | [OCRTask] Loading config from models/digital_gauge_model/ocr/config.json...
+2026-02-24 10:56:41 | INFO     | AIPipeline | ocr_task.py:79 | [OCRTask] Model: parseq, Input Size: (32, 128), Device: CUDA
+2026-02-24 10:56:41 | INFO     | AIPipeline | ocr_task.py:91 | [OCRTask] Loading weights from models/digital_gauge_model/ocr/best_model.pt...
+2026-02-24 10:56:41 | INFO     | AIPipeline | ocr_task.py:112 | [OCRTask] Model loaded and ready for inference.
+2026-02-24 10:56:41 | INFO     | AIPipeline | classification_task.py:68 | [ClassificationTask] Loading Prototypical Network from models/abnormally/best_model_resnet152_lr=0.001.pth...
+2026-02-24 10:56:43 | INFO     | AIPipeline | classification_task.py:85 | [ClassificationTask] Model loaded successfully.
+2026-02-24 10:56:43 | INFO     | AIPipeline | classification_task.py:97 | [ClassificationTask] Building Class Prototypes from: support_dataset
+2026-02-24 10:56:43 | INFO     | AIPipeline | classification_task.py:125 | [ClassificationTask] Prototype created for 'anomally' using 20 images.
+2026-02-24 10:56:43 | INFO     | AIPipeline | classification_task.py:125 | [ClassificationTask] Prototype created for 'normal' using 20 images.
+2026-02-24 10:56:43 | INFO     | AIPipeline | classification_task.py:127 | [ClassificationTask] Prototypes ready: ['anomally', 'normal']
+2026-02-24 10:56:43 | INFO     | AIPipeline | http_rev.py:24 | [HTTPProducer] Starting to poll images from: http://10.61.35.243:1984/image
+2026-02-24 10:56:43 | INFO     | AIPipeline | main.py:71 | Pipeline is running. Press Ctrl+C to stop.
+2026-02-24 10:56:43 | INFO     | AIPipeline | rtsp_out.py:106 | [OD Stream] LIVE at rtsp://10.61.35.243:9806/od
+2026-02-24 10:56:43 | INFO     | AIPipeline | rtsp_out.py:106 | [OCR Stream] LIVE at rtsp://10.61.35.243:9806/ocr
+2026-02-24 10:56:43 | INFO     | AIPipeline | rtsp_out.py:106 | [ANALOG Stream] LIVE at rtsp://10.61.35.243:9806/analog
+2026-02-24 10:56:43 | INFO     | AIPipeline | rtsp_out.py:106 | [CLASSIFICATION Stream] LIVE at rtsp://10.61.35.243:9806/cls
+2026-02-24 10:56:43 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 10:56:44 | DEBUG    | AIPipeline | visualizer.py:19 | [Visualizer] Loaded font /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf (Size: 30)
+2026-02-24 10:56:44 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 10:56:45 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 10:56:46 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 10:56:47 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 10:56:48 | INFO     | AIPipeline | main.py:81 | KeyboardInterrupt detected. Shutting down pipeline gracefully...
+2026-02-24 10:56:48 | DEBUG    | AIPipeline | base_input.py:32 | [HTTPRECEIVEProducer] Stop signal received.
+2026-02-24 10:56:48 | DEBUG    | AIPipeline | rtsp_out.py:115 | [RTSPOutput] Stop signal received.
+2026-02-24 11:00:24 | INFO     | AIPipeline | main.py:26 | === Starting AI Pipeline in [IMAGE] mode ===
+2026-02-24 11:00:24 | INFO     | AIPipeline | task_manager.py:26 | [TaskManager] Initializing AI Models...
+2026-02-24 11:00:24 | INFO     | AIPipeline | object_detection_task.py:13 | [ObjectDetectionTask] Loading YOLO model from models/obj_model/best.engine...
+2026-02-24 11:00:24 | INFO     | AIPipeline | object_detection_task.py:15 | [ObjectDetectionTask] YOLO model loaded successfully.
+2026-02-24 11:00:24 | INFO     | AIPipeline | ocr_task.py:52 | [OCRTask] Loading Display YOLO model from models/digital_gauge_model/display/best.pt...
+2026-02-24 11:00:24 | INFO     | AIPipeline | ocr_task.py:54 | [OCRTask] Display YOLO model loaded successfully.
+2026-02-24 11:00:24 | INFO     | AIPipeline | ocr_task.py:71 | [OCRTask] Loading config from models/digital_gauge_model/ocr/config.json...
+2026-02-24 11:00:24 | INFO     | AIPipeline | ocr_task.py:79 | [OCRTask] Model: parseq, Input Size: (32, 128), Device: CUDA
+2026-02-24 11:00:25 | INFO     | AIPipeline | ocr_task.py:91 | [OCRTask] Loading weights from models/digital_gauge_model/ocr/best_model.pt...
+2026-02-24 11:00:25 | INFO     | AIPipeline | ocr_task.py:112 | [OCRTask] Model loaded and ready for inference.
+2026-02-24 11:00:25 | INFO     | AIPipeline | classification_task.py:68 | [ClassificationTask] Loading Prototypical Network from models/abnormally/best_model_resnet152_lr=0.001.pth...
+2026-02-24 11:00:26 | INFO     | AIPipeline | classification_task.py:85 | [ClassificationTask] Model loaded successfully.
+2026-02-24 11:00:26 | INFO     | AIPipeline | classification_task.py:97 | [ClassificationTask] Building Class Prototypes from: support_dataset
+2026-02-24 11:00:27 | INFO     | AIPipeline | classification_task.py:125 | [ClassificationTask] Prototype created for 'anomally' using 20 images.
+2026-02-24 11:00:27 | INFO     | AIPipeline | classification_task.py:125 | [ClassificationTask] Prototype created for 'normal' using 20 images.
+2026-02-24 11:00:27 | INFO     | AIPipeline | classification_task.py:127 | [ClassificationTask] Prototypes ready: ['anomally', 'normal']
+2026-02-24 11:00:27 | INFO     | AIPipeline | http_rev.py:24 | [HTTPProducer] Starting to poll images from: http://10.61.35.243:1984/image
+2026-02-24 11:00:27 | INFO     | AIPipeline | main.py:71 | Pipeline is running. Press Ctrl+C to stop.
+2026-02-24 11:00:27 | INFO     | AIPipeline | rtsp_out.py:106 | [OD Stream] LIVE at rtsp://10.61.35.243:9806/od
+2026-02-24 11:00:27 | INFO     | AIPipeline | rtsp_out.py:106 | [OCR Stream] LIVE at rtsp://10.61.35.243:9806/ocr
+2026-02-24 11:00:27 | INFO     | AIPipeline | rtsp_out.py:106 | [ANALOG Stream] LIVE at rtsp://10.61.35.243:9806/analog
+2026-02-24 11:00:27 | INFO     | AIPipeline | rtsp_out.py:106 | [CLASSIFICATION Stream] LIVE at rtsp://10.61.35.243:9806/cls
+2026-02-24 11:00:27 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 11:00:28 | DEBUG    | AIPipeline | visualizer.py:19 | [Visualizer] Loaded font /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf (Size: 25)
+2026-02-24 11:00:28 | DEBUG    | AIPipeline | visualizer.py:19 | [Visualizer] Loaded font /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf (Size: 24)
+2026-02-24 11:00:28 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 11:00:29 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 11:00:30 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 11:00:31 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 11:00:32 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 11:00:33 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 11:00:34 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 11:00:35 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 11:00:36 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 11:00:37 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 11:00:38 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 11:00:39 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 11:00:40 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 11:00:41 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 11:00:42 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 11:00:43 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 11:00:44 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 11:00:45 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 11:00:46 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 11:00:47 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 11:00:48 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 11:00:49 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 11:00:50 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 11:00:51 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 11:00:52 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 11:00:53 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.

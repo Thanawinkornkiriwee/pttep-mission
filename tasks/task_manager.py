@@ -83,23 +83,37 @@ class TaskManager(threading.Thread):
                                 
                         elif label == "analog-gauge":
                             self.push_to_stream('analog', cropped_img)
-                        else:
-                            
+                        else: # คลาสอื่นๆ ทั้งหมดส่งเข้า Classification
                             pred_class, conf = self.cls_task.execute(cropped_img)
                             
                             if pred_class:
+                                print(f"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx {pred_class.upper()} ({conf:.1f}%)")
                                 
-                                cls_display = cropped_img.copy()
+                               
+                                h, w = cropped_img.shape[:2]
+                                min_size = 250
+                                scale = max(min_size / w, min_size / h, 1.0)
+                                new_w, new_h = int(w * scale), int(h * scale)
+                                
+                               
+                                cls_display = cv2.resize(cropped_img, (new_w, new_h))
+                                
                                 display_text = f"{pred_class.upper()} ({conf:.1f}%)"
-                                print('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',display_text)
-                             
+                                text_color = (0, 255, 0) if pred_class == "normal" else (0, 0, 255)
+                                
+                               
+                                cv2.rectangle(cls_display, (0, 0), (new_w, 35), (0, 0, 0), -1)
+                                
+                                
                                 cls_display = self.visualizer.draw_unicode_text(
                                     cls_display, 
                                     display_text, 
-                                    position=(5, 5), 
-                                    font_size=30, 
-                                    color=(0, 255, 0) if pred_class == "normal" else (0, 0, 255) 
+                                    position=(5, 5),    
+                                    font_size=24,       
+                                    color=text_color
                                 )
+                                
+                                # 5. โยนภาพเข้าคิว
                                 self.push_to_stream('cls', cls_display)
                             
             except queue.Empty:
