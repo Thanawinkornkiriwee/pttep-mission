@@ -4,9 +4,11 @@ import time
 import logging
 import cv2
 import traceback
+from cores.visualizer import Visualizer
 
 from tasks.object_detection_task import YOLOTask
 from tasks.ocr_task import OCRTask
+
 # from tasks.analog_task import AnalogTask
 # from tasks.classification_task import ClassificationTask
 
@@ -18,12 +20,14 @@ class TaskManager(threading.Thread):
         self.output_queues = output_queues
         self.running = True
         
-        # เพิ่มตัวแปร logger เพื่อไม่ให้ตอนเกิด Error แล้ว Thread พัง
         self.logger = logging.getLogger("AIPipeline")
 
         self.logger.info("[TaskManager] Initializing AI Models...")
         self.yolo = YOLOTask(config)
         self.ocr_task = OCRTask(config)
+        
+        # <--- 2. สร้างอ็อบเจกต์ Visualizer
+        self.visualizer = Visualizer(config)
 
     def push_to_stream(self, stream_name, img):
         if stream_name in self.output_queues and img is not None:
@@ -50,11 +54,8 @@ class TaskManager(threading.Thread):
                 boxes = detection_result.boxes
                 if boxes is not None and len(boxes) > 0:
                     for box in boxes:
-                        # เพิ่มบรรทัดนี้กลับเข้ามา เพื่อดึง Class ID จาก YOLOv11
                         cls_id = int(box.cls[0].item())
-                        
                         label = detection_result.names[cls_id] 
-                      
                         
                         x1, y1, x2, y2 = map(int, box.xyxy[0].tolist())
                         cropped_img = frame[y1:y2, x1:x2]
@@ -62,11 +63,20 @@ class TaskManager(threading.Thread):
                             continue
                         
                         if label == "digital-gauge": 
-                           
                             text, conf = self.ocr_task.execute(cropped_img)
                             if text:
                                 ocr_display = cropped_img.copy()
-                                cv2.putText(ocr_display, text, (5, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+                                
+                               
+                                display_text = text
+                                ocr_display = self.visualizer.draw_unicode_text(
+                                    ocr_display, 
+                                    display_text, 
+                                    position=(5, 5),     
+                                    font_size=25,        
+                                    color=(0, 0, 255)    
+                                )
+                                
                                 self.push_to_stream('ocr', ocr_display)
                                 
                         elif label == "analog-gauge":

@@ -122,26 +122,30 @@ class OCRTask:
             final_img_for_ocr = cropped_img 
             
             if self.display_model is not None:
-            
                 results = self.display_model.predict(source=cropped_img, conf=self.display_conf, verbose=False)
                 
                 if len(results) > 0 and len(results[0].boxes) > 0:
                     
-                    box = results[0].boxes[0]
-                    x1, y1, x2, y2 = map(int, box.xyxy[0].tolist())
-                    
-                  
-                    h, w = cropped_img.shape[:2]
-                    x1, y1 = max(0, x1), max(0, y1)
-                    x2, y2 = min(w, x2), min(h, y2)
-                    
-                    display_crop = cropped_img[y1:y2, x1:x2]
-               
-                    cv2.imwrite('output_image.png', display_crop)
-                    
-                   
-                    if display_crop.size > 0:
-                        final_img_for_ocr = display_crop
+                    for box in results[0].boxes:
+                        cls_id = int(box.cls[0].item())
+                        label = results[0].names[cls_id]
+                        
+                       
+                        if label == "display": 
+                            x1, y1, x2, y2 = map(int, box.xyxy[0].tolist())
+                            
+                            h, w = cropped_img.shape[:2]
+                            x1, y1 = max(0, x1), max(0, y1)
+                            x2, y2 = min(w, x2), min(h, y2)
+                            
+                            display_crop = cropped_img[y1:y2, x1:x2]
+                            cv2.imwrite('output_image.png', display_crop)
+                            
+                            if display_crop.size > 0:
+                                final_img_for_ocr = display_crop
+                                
+                            
+                            break
 
             # ==========================================
             # DOCTR 
