@@ -19637,3 +19637,106 @@ UnboundLocalError: cannot access local variable 'cls_id' where it is not associa
 2026-02-24 10:52:15 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
 2026-02-24 10:52:16 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
 2026-02-24 10:52:17 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 10:52:18 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 10:52:19 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 10:52:20 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 10:52:21 | INFO     | AIPipeline | main.py:81 | KeyboardInterrupt detected. Shutting down pipeline gracefully...
+2026-02-24 10:52:21 | DEBUG    | AIPipeline | base_input.py:32 | [HTTPRECEIVEProducer] Stop signal received.
+2026-02-24 10:52:21 | DEBUG    | AIPipeline | rtsp_out.py:115 | [RTSPOutput] Stop signal received.
+2026-02-24 10:52:21 | INFO     | AIPipeline | http_rev.py:107 | [HTTPProducer] Thread stopped cleanly.
+2026-02-24 10:52:21 | INFO     | AIPipeline | main.py:93 | === Pipeline shutdown complete. ===
+2026-02-24 10:53:17 | INFO     | AIPipeline | main.py:26 | === Starting AI Pipeline in [IMAGE] mode ===
+2026-02-24 10:53:17 | INFO     | AIPipeline | task_manager.py:26 | [TaskManager] Initializing AI Models...
+2026-02-24 10:53:17 | INFO     | AIPipeline | object_detection_task.py:13 | [ObjectDetectionTask] Loading YOLO model from models/obj_model/best.engine...
+2026-02-24 10:53:17 | INFO     | AIPipeline | object_detection_task.py:15 | [ObjectDetectionTask] YOLO model loaded successfully.
+2026-02-24 10:53:17 | INFO     | AIPipeline | ocr_task.py:52 | [OCRTask] Loading Display YOLO model from models/digital_gauge_model/display/best.pt...
+2026-02-24 10:53:17 | INFO     | AIPipeline | ocr_task.py:54 | [OCRTask] Display YOLO model loaded successfully.
+2026-02-24 10:53:17 | INFO     | AIPipeline | ocr_task.py:71 | [OCRTask] Loading config from models/digital_gauge_model/ocr/config.json...
+2026-02-24 10:53:17 | INFO     | AIPipeline | ocr_task.py:79 | [OCRTask] Model: parseq, Input Size: (32, 128), Device: CUDA
+2026-02-24 10:53:17 | INFO     | AIPipeline | ocr_task.py:91 | [OCRTask] Loading weights from models/digital_gauge_model/ocr/best_model.pt...
+2026-02-24 10:53:18 | INFO     | AIPipeline | ocr_task.py:112 | [OCRTask] Model loaded and ready for inference.
+2026-02-24 10:53:18 | INFO     | AIPipeline | classification_task.py:68 | [ClassificationTask] Loading Prototypical Network from models/abnormally/best_model_resnet152_lr=0.001.pth...
+2026-02-24 10:53:19 | INFO     | AIPipeline | classification_task.py:85 | [ClassificationTask] Model loaded successfully.
+2026-02-24 10:53:19 | INFO     | AIPipeline | classification_task.py:97 | [ClassificationTask] Building Class Prototypes from: support_dataset
+2026-02-24 10:53:20 | INFO     | AIPipeline | classification_task.py:125 | [ClassificationTask] Prototype created for 'anomally' using 20 images.
+2026-02-24 10:53:20 | INFO     | AIPipeline | classification_task.py:125 | [ClassificationTask] Prototype created for 'normal' using 20 images.
+2026-02-24 10:53:20 | INFO     | AIPipeline | classification_task.py:127 | [ClassificationTask] Prototypes ready: ['anomally', 'normal']
+2026-02-24 10:53:20 | INFO     | AIPipeline | http_rev.py:24 | [HTTPProducer] Starting to poll images from: http://10.61.35.243:1984/image
+2026-02-24 10:53:20 | INFO     | AIPipeline | main.py:71 | Pipeline is running. Press Ctrl+C to stop.
+2026-02-24 10:53:20 | INFO     | AIPipeline | rtsp_out.py:106 | [OD Stream] LIVE at rtsp://10.61.35.243:9806/od
+2026-02-24 10:53:20 | INFO     | AIPipeline | rtsp_out.py:106 | [OCR Stream] LIVE at rtsp://10.61.35.243:9806/ocr
+2026-02-24 10:53:20 | INFO     | AIPipeline | rtsp_out.py:106 | [ANALOG Stream] LIVE at rtsp://10.61.35.243:9806/analog
+2026-02-24 10:53:20 | INFO     | AIPipeline | rtsp_out.py:106 | [CLASSIFICATION Stream] LIVE at rtsp://10.61.35.243:9806/cls
+2026-02-24 10:53:20 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 10:53:20 | DEBUG    | AIPipeline | visualizer.py:19 | [Visualizer] Loaded font /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf (Size: 30)
+2026-02-24 10:53:21 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 10:53:22 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 10:53:23 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 10:53:24 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 10:53:25 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 10:53:25 | INFO     | AIPipeline | main.py:81 | KeyboardInterrupt detected. Shutting down pipeline gracefully...
+2026-02-24 10:53:25 | DEBUG    | AIPipeline | base_input.py:32 | [HTTPRECEIVEProducer] Stop signal received.
+2026-02-24 10:53:25 | DEBUG    | AIPipeline | rtsp_out.py:115 | [RTSPOutput] Stop signal received.
+2026-02-24 10:54:23 | INFO     | AIPipeline | main.py:26 | === Starting AI Pipeline in [IMAGE] mode ===
+2026-02-24 10:54:23 | INFO     | AIPipeline | task_manager.py:26 | [TaskManager] Initializing AI Models...
+2026-02-24 10:54:23 | INFO     | AIPipeline | object_detection_task.py:13 | [ObjectDetectionTask] Loading YOLO model from models/obj_model/best.engine...
+2026-02-24 10:54:23 | INFO     | AIPipeline | object_detection_task.py:15 | [ObjectDetectionTask] YOLO model loaded successfully.
+2026-02-24 10:54:23 | INFO     | AIPipeline | ocr_task.py:52 | [OCRTask] Loading Display YOLO model from models/digital_gauge_model/display/best.pt...
+2026-02-24 10:54:23 | INFO     | AIPipeline | ocr_task.py:54 | [OCRTask] Display YOLO model loaded successfully.
+2026-02-24 10:54:23 | INFO     | AIPipeline | ocr_task.py:71 | [OCRTask] Loading config from models/digital_gauge_model/ocr/config.json...
+2026-02-24 10:54:23 | INFO     | AIPipeline | ocr_task.py:79 | [OCRTask] Model: parseq, Input Size: (32, 128), Device: CUDA
+2026-02-24 10:54:23 | INFO     | AIPipeline | ocr_task.py:91 | [OCRTask] Loading weights from models/digital_gauge_model/ocr/best_model.pt...
+2026-02-24 10:54:24 | INFO     | AIPipeline | ocr_task.py:112 | [OCRTask] Model loaded and ready for inference.
+2026-02-24 10:54:24 | INFO     | AIPipeline | classification_task.py:68 | [ClassificationTask] Loading Prototypical Network from models/abnormally/best_model_resnet152_lr=0.001.pth...
+2026-02-24 10:54:25 | INFO     | AIPipeline | classification_task.py:85 | [ClassificationTask] Model loaded successfully.
+2026-02-24 10:54:25 | INFO     | AIPipeline | classification_task.py:97 | [ClassificationTask] Building Class Prototypes from: support_dataset
+2026-02-24 10:54:26 | INFO     | AIPipeline | classification_task.py:125 | [ClassificationTask] Prototype created for 'anomally' using 20 images.
+2026-02-24 10:54:26 | INFO     | AIPipeline | classification_task.py:125 | [ClassificationTask] Prototype created for 'normal' using 20 images.
+2026-02-24 10:54:26 | INFO     | AIPipeline | classification_task.py:127 | [ClassificationTask] Prototypes ready: ['anomally', 'normal']
+2026-02-24 10:54:26 | INFO     | AIPipeline | http_rev.py:24 | [HTTPProducer] Starting to poll images from: http://10.61.35.243:1984/image
+2026-02-24 10:54:26 | INFO     | AIPipeline | main.py:71 | Pipeline is running. Press Ctrl+C to stop.
+2026-02-24 10:54:26 | INFO     | AIPipeline | rtsp_out.py:106 | [OD Stream] LIVE at rtsp://10.61.35.243:9806/od
+2026-02-24 10:54:26 | INFO     | AIPipeline | rtsp_out.py:106 | [OCR Stream] LIVE at rtsp://10.61.35.243:9806/ocr
+2026-02-24 10:54:26 | INFO     | AIPipeline | rtsp_out.py:106 | [ANALOG Stream] LIVE at rtsp://10.61.35.243:9806/analog
+2026-02-24 10:54:26 | INFO     | AIPipeline | rtsp_out.py:106 | [CLASSIFICATION Stream] LIVE at rtsp://10.61.35.243:9806/cls
+2026-02-24 10:54:26 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 10:54:26 | DEBUG    | AIPipeline | visualizer.py:19 | [Visualizer] Loaded font /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf (Size: 30)
+2026-02-24 10:54:27 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 10:54:27 | DEBUG    | AIPipeline | visualizer.py:19 | [Visualizer] Loaded font /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf (Size: 25)
+2026-02-24 10:54:28 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 10:54:29 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 10:54:30 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 10:54:30 | INFO     | AIPipeline | main.py:81 | KeyboardInterrupt detected. Shutting down pipeline gracefully...
+2026-02-24 10:54:30 | DEBUG    | AIPipeline | base_input.py:32 | [HTTPRECEIVEProducer] Stop signal received.
+2026-02-24 10:54:30 | DEBUG    | AIPipeline | rtsp_out.py:115 | [RTSPOutput] Stop signal received.
+2026-02-24 10:55:36 | INFO     | AIPipeline | main.py:26 | === Starting AI Pipeline in [IMAGE] mode ===
+2026-02-24 10:55:36 | INFO     | AIPipeline | task_manager.py:26 | [TaskManager] Initializing AI Models...
+2026-02-24 10:55:36 | INFO     | AIPipeline | object_detection_task.py:13 | [ObjectDetectionTask] Loading YOLO model from models/obj_model/best.engine...
+2026-02-24 10:55:36 | INFO     | AIPipeline | object_detection_task.py:15 | [ObjectDetectionTask] YOLO model loaded successfully.
+2026-02-24 10:55:36 | INFO     | AIPipeline | ocr_task.py:52 | [OCRTask] Loading Display YOLO model from models/digital_gauge_model/display/best.pt...
+2026-02-24 10:55:36 | INFO     | AIPipeline | ocr_task.py:54 | [OCRTask] Display YOLO model loaded successfully.
+2026-02-24 10:55:36 | INFO     | AIPipeline | ocr_task.py:71 | [OCRTask] Loading config from models/digital_gauge_model/ocr/config.json...
+2026-02-24 10:55:36 | INFO     | AIPipeline | ocr_task.py:79 | [OCRTask] Model: parseq, Input Size: (32, 128), Device: CUDA
+2026-02-24 10:55:36 | INFO     | AIPipeline | ocr_task.py:91 | [OCRTask] Loading weights from models/digital_gauge_model/ocr/best_model.pt...
+2026-02-24 10:55:37 | INFO     | AIPipeline | ocr_task.py:112 | [OCRTask] Model loaded and ready for inference.
+2026-02-24 10:55:37 | INFO     | AIPipeline | classification_task.py:68 | [ClassificationTask] Loading Prototypical Network from models/abnormally/best_model_resnet152_lr=0.001.pth...
+2026-02-24 10:55:38 | INFO     | AIPipeline | classification_task.py:85 | [ClassificationTask] Model loaded successfully.
+2026-02-24 10:55:38 | INFO     | AIPipeline | classification_task.py:97 | [ClassificationTask] Building Class Prototypes from: support_dataset
+2026-02-24 10:55:39 | INFO     | AIPipeline | classification_task.py:125 | [ClassificationTask] Prototype created for 'anomally' using 20 images.
+2026-02-24 10:55:39 | INFO     | AIPipeline | classification_task.py:125 | [ClassificationTask] Prototype created for 'normal' using 20 images.
+2026-02-24 10:55:39 | INFO     | AIPipeline | classification_task.py:127 | [ClassificationTask] Prototypes ready: ['anomally', 'normal']
+2026-02-24 10:55:39 | INFO     | AIPipeline | http_rev.py:24 | [HTTPProducer] Starting to poll images from: http://10.61.35.243:1984/image
+2026-02-24 10:55:39 | INFO     | AIPipeline | main.py:71 | Pipeline is running. Press Ctrl+C to stop.
+2026-02-24 10:55:39 | INFO     | AIPipeline | rtsp_out.py:106 | [OD Stream] LIVE at rtsp://10.61.35.243:9806/od
+2026-02-24 10:55:39 | INFO     | AIPipeline | rtsp_out.py:106 | [OCR Stream] LIVE at rtsp://10.61.35.243:9806/ocr
+2026-02-24 10:55:39 | INFO     | AIPipeline | rtsp_out.py:106 | [ANALOG Stream] LIVE at rtsp://10.61.35.243:9806/analog
+2026-02-24 10:55:39 | INFO     | AIPipeline | rtsp_out.py:106 | [CLASSIFICATION Stream] LIVE at rtsp://10.61.35.243:9806/cls
+2026-02-24 10:55:39 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 10:55:39 | DEBUG    | AIPipeline | visualizer.py:19 | [Visualizer] Loaded font /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf (Size: 30)
+2026-02-24 10:55:40 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 10:55:41 | DEBUG    | AIPipeline | http_rev.py:98 | [HTTPProducer] Successfully grabbed a frame and put it in queue.
+2026-02-24 10:55:42 | INFO     | AIPipeline | main.py:81 | KeyboardInterrupt detected. Shutting down pipeline gracefully...
+2026-02-24 10:55:42 | DEBUG    | AIPipeline | base_input.py:32 | [HTTPRECEIVEProducer] Stop signal received.
+2026-02-24 10:55:42 | DEBUG    | AIPipeline | rtsp_out.py:115 | [RTSPOutput] Stop signal received.
+2026-02-24 10:55:42 | INFO     | AIPipeline | http_rev.py:107 | [HTTPProducer] Thread stopped cleanly.
+2026-02-24 10:55:42 | INFO     | AIPipeline | main.py:93 | === Pipeline shutdown complete. ===

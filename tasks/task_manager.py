@@ -84,12 +84,14 @@ class TaskManager(threading.Thread):
                         elif label == "analog-gauge":
                             self.push_to_stream('analog', cropped_img)
                         else:
+                            
                             pred_class, conf = self.cls_task.execute(cropped_img)
                             
                             if pred_class:
+                                
                                 cls_display = cropped_img.copy()
                                 display_text = f"{pred_class.upper()} ({conf:.1f}%)"
-                                
+                                print('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',display_text)
                              
                                 cls_display = self.visualizer.draw_unicode_text(
                                     cls_display, 
