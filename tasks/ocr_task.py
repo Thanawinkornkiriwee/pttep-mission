@@ -139,7 +139,7 @@ class OCRTask:
                             x2, y2 = min(w, x2), min(h, y2)
                             
                             display_crop = cropped_img[y1:y2, x1:x2]
-                            cv2.imwrite('output_image.png', display_crop)
+                            # cv2.imwrite('output_image.png', display_crop)
                             
                             if display_crop.size > 0:
                                 final_img_for_ocr = display_crop
@@ -158,7 +158,7 @@ class OCRTask:
                 dim = (target_width, int(h * r))
 
                 resized = cv2.resize(final_img_for_ocr, dim, interpolation=cv2.INTER_AREA)
-                cv2.imwrite('resize_display.jpg',resized)
+                # cv2.imwrite('resize_display.jpg',resized)
                 
                 img_rgb = cv2.cvtColor(resized, cv2.COLOR_BGR2RGB)
                 img_tensor = self.transforms(img_rgb).unsqueeze(0).to(self.device)
