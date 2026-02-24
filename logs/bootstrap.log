@@ -67,3 +67,4 @@
 2026-02-24 10:55:36 | INFO     | AIPipeline | config_loader.py:22 | Successfully loaded configuration from configs/config.yaml
 2026-02-24 10:56:41 | INFO     | AIPipeline | config_loader.py:22 | Successfully loaded configuration from configs/config.yaml
 2026-02-24 11:00:24 | INFO     | AIPipeline | config_loader.py:22 | Successfully loaded configuration from configs/config.yaml
+2026-02-24 11:03:51 | INFO     | AIPipeline | config_loader.py:22 | Successfully loaded configuration from configs/config.yaml
